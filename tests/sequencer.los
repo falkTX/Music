@@ -1,0 +1,1550 @@
+<?xml version="1.0"?>
+<los version="2.0">
+  <configuration>
+    <nextTrackPartColor>5</nextTrackPartColor>
+    <midiInputDevice>0</midiInputDevice>
+    <midiInputChannel>0</midiInputChannel>
+    <midiRecordType>0</midiRecordType>
+    <midiThruType>0</midiThruType>
+    <midiFilterCtrl1>0</midiFilterCtrl1>
+    <midiFilterCtrl2>0</midiFilterCtrl2>
+    <midiFilterCtrl3>0</midiFilterCtrl3>
+    <midiFilterCtrl4>0</midiFilterCtrl4>
+    <mtctype>1</mtctype>
+    <mtcoffset>00:00:00:00:00</mtcoffset>
+    <sendClockDelay>1</sendClockDelay>
+    <useJackTransport>1</useJackTransport>
+    <jackTransportMaster>1</jackTransportMaster>
+    <extSync>0</extSync>
+    <composer>
+      <xpos>44</xpos>
+      <xmag>563</xmag>
+      <ypos>0</ypos>
+    </composer>
+    <sequencer>
+      <midiport portId="1392859934476707713" isGlobalInput="0">
+        <name>drums</name>
+        <cacheNRPN>0</cacheNRPN>
+        <type>1</type>
+        <openFlags>1</openFlags>
+        <channel idx="0">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="1">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="2">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="3">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="4">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="5">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="6">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="7">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="8">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="9">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="10">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="11">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="12">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="13">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="14">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="15">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+      </midiport>
+      <midiport portId="1392859935186278907" isGlobalInput="0">
+        <name>strings1</name>
+        <cacheNRPN>0</cacheNRPN>
+        <type>1</type>
+        <openFlags>1</openFlags>
+        <channel idx="0">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="1">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="2">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="3">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="4">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="5">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="6">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="7">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="8">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="9">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="10">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="11">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="12">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="13">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="14">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="15">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+      </midiport>
+      <midiport portId="1392863718505671508" isGlobalInput="0">
+        <name>bass1</name>
+        <cacheNRPN>0</cacheNRPN>
+        <type>1</type>
+        <openFlags>1</openFlags>
+        <channel idx="0">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="1">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="2">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="3">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="4">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="5">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="6">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="7">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="8">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="9">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="10">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="11">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="12">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="13">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="14">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="15">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+      </midiport>
+      <midiport portId="1392863720137716191" isGlobalInput="0">
+        <name>syn1</name>
+        <cacheNRPN>0</cacheNRPN>
+        <type>1</type>
+        <openFlags>1</openFlags>
+        <channel idx="0">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="1">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="2">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="3">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="4">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="5">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="6">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="7">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="8">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="9">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="10">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="11">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="12">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="13">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="14">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+        <channel idx="15">
+          <controller id="7">
+          </controller>
+          <controller id="10">
+          </controller>
+          <controller id="120">
+            <val>0</val>
+          </controller>
+          <controller id="121">
+            <val>0</val>
+          </controller>
+          <controller id="123">
+            <val>0</val>
+          </controller>
+        </channel>
+      </midiport>
+    </sequencer>
+  </configuration>
+  <song>
+    <info></info>
+    <masterTrackId>1328921206007395620</masterTrackId>
+    <associatedRoute></associatedRoute>
+    <automation>1</automation>
+    <cpos>21547</cpos>
+    <rpos>12288</rpos>
+    <lpos>0</lpos>
+    <master>1</master>
+    <loop>0</loop>
+    <punchin>1</punchin>
+    <punchout>1</punchout>
+    <record>0</record>
+    <solo>0</solo>
+    <type>0</type>
+    <recmode>0</recmode>
+    <cycle>0</cycle>
+    <quantize>0</quantize>
+    <len>405504</len>
+    <follow>1</follow>
+    <miditrack>
+      <name>drums</name>
+      <trackId>1392860111122344847</trackId>
+      <record>1</record>
+      <mute>0</mute>
+      <solo>0</solo>
+      <off>0</off>
+      <channels>0</channels>
+      <height>50</height>
+      <locked>0</locked>
+      <reminder1>0</reminder1>
+      <reminder2>0</reminder2>
+      <reminder3>0</reminder3>
+      <collapsed>1</collapsed>
+      <mixertab>0</mixertab>
+      <partcolor>1</partcolor>
+      <selected>1</selected>
+      <MidiAssign port="0" channel="0" enabled="0" preset="0" midimap="0:0:262147:-1:0:0 0:0:7:-1:0:0 0:0:262148:-1:0:0 0:0:262149:-1:0:0 0:0:10:-1:0:0 " />
+      <chainMaster>0</chainMaster>
+      <masterFlag>1</masterFlag>
+      <deviceId>1392859934476707713</deviceId>
+      <channel>0</channel>
+      <locked>0</locked>
+      <echo>1</echo>
+      <transposition>0</transposition>
+      <transpose>0</transpose>
+      <velocity>0</velocity>
+      <delay>0</delay>
+      <len>100</len>
+      <compression>100</compression>
+      <automation>1</automation>
+      <part>
+        <name>drums</name>
+        <poslen tick="0" len="6144" />
+        <selected>0</selected>
+        <color>1</color>
+        <zIndex>0</zIndex>
+        <rightClip>0</rightClip>
+        <leftClip>0</leftClip>
+        <event tick="0" len="288" a="36" b="70" />
+        <event tick="0" len="288" a="37" b="80" />
+        <event tick="384" len="288" a="36" b="70" />
+        <event tick="384" len="288" a="37" b="80" />
+        <event tick="768" len="288" a="36" b="70" />
+        <event tick="768" len="288" a="37" b="80" />
+        <event tick="1152" len="288" a="36" b="70" />
+        <event tick="1152" len="288" a="37" b="75" />
+        <event tick="1536" len="288" a="36" b="70" />
+        <event tick="1536" len="288" a="37" b="80" />
+        <event tick="1920" len="288" a="36" b="70" />
+        <event tick="1920" len="288" a="37" b="80" />
+        <event tick="2304" len="288" a="36" b="70" />
+        <event tick="2304" len="288" a="37" b="80" />
+        <event tick="2688" len="288" a="36" b="70" />
+        <event tick="2688" len="288" a="37" b="75" />
+        <event tick="3072" len="288" a="36" b="70" />
+        <event tick="3072" len="288" a="37" b="80" />
+        <event tick="3456" len="288" a="36" b="70" />
+        <event tick="3456" len="288" a="37" b="80" />
+        <event tick="3840" len="288" a="36" b="70" />
+        <event tick="3840" len="288" a="37" b="80" />
+        <event tick="4224" len="288" a="36" b="70" />
+        <event tick="4224" len="288" a="37" b="75" />
+        <event tick="4608" len="288" a="36" b="70" />
+        <event tick="4608" len="288" a="37" b="80" />
+        <event tick="4992" len="288" a="36" b="70" />
+        <event tick="4992" len="288" a="37" b="80" />
+        <event tick="5376" len="288" a="36" b="70" />
+        <event tick="5376" len="288" a="37" b="80" />
+        <event tick="5760" len="288" a="36" b="70" />
+        <event tick="5760" len="288" a="37" b="75" />
+      </part>
+      <part>
+        <name>drums</name>
+        <poslen tick="6144" len="6144" />
+        <selected>0</selected>
+        <color>1</color>
+        <zIndex>0</zIndex>
+        <rightClip>0</rightClip>
+        <leftClip>0</leftClip>
+        <event tick="6144" len="288" a="36" b="70" />
+        <event tick="6144" len="288" a="37" b="80" />
+        <event tick="6528" len="288" a="36" b="70" />
+        <event tick="6528" len="288" a="37" b="80" />
+        <event tick="6912" len="288" a="36" b="70" />
+        <event tick="6912" len="288" a="37" b="80" />
+        <event tick="7296" len="288" a="36" b="70" />
+        <event tick="7296" len="288" a="37" b="75" />
+        <event tick="7680" len="288" a="36" b="70" />
+        <event tick="7680" len="288" a="37" b="80" />
+        <event tick="8064" len="288" a="36" b="70" />
+        <event tick="8064" len="288" a="37" b="80" />
+        <event tick="8448" len="288" a="36" b="70" />
+        <event tick="8448" len="288" a="37" b="80" />
+        <event tick="8832" len="288" a="36" b="70" />
+        <event tick="8832" len="288" a="37" b="75" />
+        <event tick="9216" len="288" a="36" b="70" />
+        <event tick="9216" len="288" a="37" b="80" />
+        <event tick="9600" len="288" a="36" b="70" />
+        <event tick="9600" len="288" a="37" b="80" />
+        <event tick="9984" len="288" a="36" b="70" />
+        <event tick="9984" len="288" a="37" b="80" />
+        <event tick="10368" len="288" a="36" b="70" />
+        <event tick="10368" len="288" a="37" b="75" />
+        <event tick="10752" len="288" a="36" b="70" />
+        <event tick="10752" len="288" a="37" b="80" />
+        <event tick="11136" len="288" a="36" b="70" />
+        <event tick="11136" len="288" a="37" b="80" />
+        <event tick="11520" len="288" a="36" b="70" />
+        <event tick="11520" len="288" a="37" b="80" />
+        <event tick="11904" len="288" a="36" b="70" />
+        <event tick="11904" len="288" a="37" b="75" />
+      </part>
+      <part>
+        <name>drums</name>
+        <poslen tick="12288" len="6144" />
+        <selected>0</selected>
+        <color>1</color>
+        <zIndex>0</zIndex>
+        <rightClip>0</rightClip>
+        <leftClip>0</leftClip>
+        <event tick="12288" len="288" a="36" b="70" />
+        <event tick="12288" len="288" a="37" b="80" />
+        <event tick="12672" len="288" a="36" b="75" />
+        <event tick="12672" len="288" a="37" b="75" />
+        <event tick="13056" len="288" a="36" b="70" />
+        <event tick="13056" len="288" a="37" b="70" />
+        <event tick="13440" len="288" a="36" b="66" />
+        <event tick="13440" len="288" a="37" b="66" />
+        <event tick="13824" len="288" a="36" b="62" />
+        <event tick="13824" len="288" a="37" b="62" />
+        <event tick="14208" len="288" a="36" b="58" />
+        <event tick="14208" len="288" a="37" b="58" />
+        <event tick="14592" len="288" a="36" b="53" />
+        <event tick="14592" len="288" a="37" b="53" />
+        <event tick="14976" len="288" a="36" b="47" />
+        <event tick="14976" len="288" a="37" b="47" />
+        <event tick="15360" len="288" a="36" b="43" />
+        <event tick="15360" len="288" a="37" b="43" />
+        <event tick="15744" len="288" a="36" b="39" />
+        <event tick="15744" len="288" a="37" b="39" />
+        <event tick="16128" len="288" a="36" b="34" />
+        <event tick="16128" len="288" a="37" b="34" />
+        <event tick="16512" len="288" a="36" b="30" />
+        <event tick="16512" len="288" a="37" b="30" />
+        <event tick="16896" len="288" a="36" b="26" />
+        <event tick="16896" len="288" a="37" b="26" />
+        <event tick="17280" len="288" a="36" b="20" />
+        <event tick="17280" len="288" a="37" b="20" />
+        <event tick="17664" len="288" a="36" b="15" />
+        <event tick="17664" len="288" a="37" b="15" />
+        <event tick="18048" len="288" a="36" b="11" />
+        <event tick="18048" len="288" a="37" b="11" />
+      </part>
+    </miditrack>
+    <miditrack>
+      <name>strings1</name>
+      <trackId>1392861280361365699</trackId>
+      <record>0</record>
+      <mute>0</mute>
+      <solo>0</solo>
+      <off>0</off>
+      <channels>0</channels>
+      <height>50</height>
+      <locked>0</locked>
+      <reminder1>0</reminder1>
+      <reminder2>0</reminder2>
+      <reminder3>0</reminder3>
+      <collapsed>1</collapsed>
+      <mixertab>0</mixertab>
+      <partcolor>2</partcolor>
+      <MidiAssign port="0" channel="0" enabled="0" preset="0" midimap="0:0:262147:-1:0:0 0:0:7:-1:0:0 0:0:262148:-1:0:0 0:0:262149:-1:0:0 0:0:10:-1:0:0 " />
+      <chainMaster>0</chainMaster>
+      <masterFlag>1</masterFlag>
+      <deviceId>1392859935186278907</deviceId>
+      <channel>0</channel>
+      <locked>0</locked>
+      <echo>1</echo>
+      <transposition>0</transposition>
+      <transpose>0</transpose>
+      <velocity>0</velocity>
+      <delay>0</delay>
+      <len>100</len>
+      <compression>100</compression>
+      <automation>1</automation>
+      <part>
+        <name>strings1</name>
+        <poslen tick="6144" len="6144" />
+        <selected>0</selected>
+        <color>2</color>
+        <zIndex>0</zIndex>
+        <rightClip>0</rightClip>
+        <leftClip>0</leftClip>
+        <event tick="6144" len="768" a="72" b="70" />
+        <event tick="6912" len="768" a="76" b="70" />
+        <event tick="7680" len="768" a="72" b="70" />
+        <event tick="8448" len="768" a="77" b="70" />
+        <event tick="9216" len="768" a="74" b="70" />
+        <event tick="9984" len="768" a="76" b="70" />
+        <event tick="10752" len="768" a="74" b="70" />
+        <event tick="11520" len="768" a="72" b="70" />
+      </part>
+      <part>
+        <name>strings1</name>
+        <poslen tick="12288" len="6144" />
+        <selected>0</selected>
+        <color>2</color>
+        <zIndex>0</zIndex>
+        <rightClip>0</rightClip>
+        <leftClip>0</leftClip>
+        <event tick="12288" len="768" a="72" b="70" />
+        <event tick="13056" len="768" a="76" b="70" />
+        <event tick="13824" len="768" a="72" b="70" />
+        <event tick="14592" len="768" a="77" b="70" />
+        <event tick="15360" len="768" a="74" b="70" />
+        <event tick="16128" len="768" a="76" b="70" />
+        <event tick="16896" len="768" a="74" b="70" />
+        <event tick="17664" len="768" a="72" b="70" />
+      </part>
+    </miditrack>
+    <miditrack>
+      <name>bass1</name>
+      <trackId>1392864126760880368</trackId>
+      <record>0</record>
+      <mute>0</mute>
+      <solo>0</solo>
+      <off>0</off>
+      <channels>0</channels>
+      <height>50</height>
+      <locked>0</locked>
+      <reminder1>0</reminder1>
+      <reminder2>0</reminder2>
+      <reminder3>0</reminder3>
+      <collapsed>1</collapsed>
+      <mixertab>0</mixertab>
+      <partcolor>3</partcolor>
+      <MidiAssign port="0" channel="0" enabled="0" preset="0" midimap="0:0:262147:-1:0:0 0:0:7:-1:0:0 0:0:262148:-1:0:0 0:0:262149:-1:0:0 0:0:10:-1:0:0 " />
+      <chainMaster>0</chainMaster>
+      <masterFlag>1</masterFlag>
+      <deviceId>1392863718505671508</deviceId>
+      <channel>0</channel>
+      <locked>0</locked>
+      <echo>1</echo>
+      <transposition>0</transposition>
+      <transpose>0</transpose>
+      <velocity>0</velocity>
+      <delay>0</delay>
+      <len>100</len>
+      <compression>100</compression>
+      <automation>1</automation>
+      <part>
+        <name>bass1</name>
+        <poslen tick="0" len="6144" />
+        <selected>0</selected>
+        <color>3</color>
+        <zIndex>0</zIndex>
+        <rightClip>0</rightClip>
+        <leftClip>0</leftClip>
+        <event tick="192" len="192" a="60" b="70" />
+        <event tick="480" len="192" a="60" b="70" />
+        <event tick="864" len="192" a="60" b="70" />
+        <event tick="1152" len="96" a="62" b="70" />
+        <event tick="1248" len="96" a="62" b="70" />
+        <event tick="1344" len="96" a="62" b="70" />
+        <event tick="1728" len="192" a="60" b="70" />
+        <event tick="2016" len="192" a="60" b="70" />
+        <event tick="2400" len="192" a="60" b="70" />
+        <event tick="2688" len="96" a="62" b="70" />
+        <event tick="2784" len="96" a="62" b="70" />
+        <event tick="2880" len="96" a="62" b="70" />
+        <event tick="3264" len="192" a="60" b="70" />
+        <event tick="3552" len="192" a="60" b="70" />
+        <event tick="3936" len="192" a="60" b="70" />
+        <event tick="4224" len="96" a="62" b="70" />
+        <event tick="4320" len="96" a="62" b="70" />
+        <event tick="4416" len="96" a="62" b="70" />
+        <event tick="4800" len="192" a="60" b="70" />
+        <event tick="5088" len="192" a="60" b="70" />
+        <event tick="5472" len="192" a="60" b="70" />
+        <event tick="5760" len="96" a="62" b="70" />
+        <event tick="5856" len="96" a="62" b="70" />
+        <event tick="5952" len="96" a="62" b="70" />
+      </part>
+      <part>
+        <name>bass1</name>
+        <poslen tick="6144" len="6144" />
+        <selected>0</selected>
+        <color>3</color>
+        <zIndex>0</zIndex>
+        <rightClip>0</rightClip>
+        <leftClip>0</leftClip>
+        <event tick="6336" len="192" a="60" b="70" />
+        <event tick="6624" len="192" a="60" b="70" />
+        <event tick="7008" len="192" a="60" b="70" />
+        <event tick="7296" len="96" a="62" b="70" />
+        <event tick="7392" len="96" a="62" b="70" />
+        <event tick="7488" len="96" a="62" b="70" />
+        <event tick="7872" len="192" a="60" b="70" />
+        <event tick="8160" len="192" a="60" b="70" />
+        <event tick="8544" len="192" a="60" b="70" />
+        <event tick="8832" len="96" a="62" b="70" />
+        <event tick="8928" len="96" a="62" b="70" />
+        <event tick="9024" len="96" a="62" b="70" />
+        <event tick="9408" len="192" a="60" b="70" />
+        <event tick="9696" len="192" a="60" b="70" />
+        <event tick="10080" len="192" a="60" b="70" />
+        <event tick="10368" len="96" a="62" b="70" />
+        <event tick="10464" len="96" a="62" b="70" />
+        <event tick="10560" len="96" a="62" b="70" />
+        <event tick="10944" len="192" a="60" b="70" />
+        <event tick="11232" len="192" a="60" b="70" />
+        <event tick="11616" len="192" a="60" b="70" />
+        <event tick="11904" len="96" a="62" b="70" />
+        <event tick="12000" len="96" a="62" b="70" />
+        <event tick="12096" len="96" a="62" b="70" />
+      </part>
+    </miditrack>
+    <miditrack>
+      <name>syn1</name>
+      <trackId>1392865552399757080</trackId>
+      <record>0</record>
+      <mute>0</mute>
+      <solo>0</solo>
+      <off>0</off>
+      <channels>0</channels>
+      <height>50</height>
+      <locked>0</locked>
+      <reminder1>0</reminder1>
+      <reminder2>0</reminder2>
+      <reminder3>0</reminder3>
+      <collapsed>1</collapsed>
+      <mixertab>0</mixertab>
+      <partcolor>4</partcolor>
+      <MidiAssign port="0" channel="0" enabled="0" preset="0" midimap="0:0:262147:-1:0:0 0:0:7:-1:0:0 0:0:262148:-1:0:0 0:0:262149:-1:0:0 0:0:10:-1:0:0 " />
+      <chainMaster>0</chainMaster>
+      <masterFlag>1</masterFlag>
+      <deviceId>1392863720137716191</deviceId>
+      <channel>0</channel>
+      <locked>0</locked>
+      <echo>1</echo>
+      <transposition>0</transposition>
+      <transpose>0</transpose>
+      <velocity>0</velocity>
+      <delay>0</delay>
+      <len>100</len>
+      <compression>100</compression>
+      <automation>1</automation>
+      <part>
+        <name>syn1</name>
+        <poslen tick="0" len="6144" />
+        <selected>0</selected>
+        <color>4</color>
+        <zIndex>0</zIndex>
+        <rightClip>0</rightClip>
+        <leftClip>0</leftClip>
+        <event tick="0" len="768" a="60" b="70" />
+        <event tick="0" len="768" a="65" b="70" />
+        <event tick="768" len="768" a="67" b="70" />
+        <event tick="768" len="768" a="62" b="70" />
+        <event tick="1536" len="768" a="60" b="70" />
+        <event tick="1536" len="768" a="65" b="70" />
+        <event tick="2304" len="768" a="67" b="70" />
+        <event tick="2304" len="768" a="62" b="70" />
+        <event tick="3072" len="768" a="60" b="70" />
+        <event tick="3072" len="768" a="65" b="70" />
+        <event tick="3840" len="768" a="67" b="70" />
+        <event tick="3840" len="768" a="62" b="70" />
+        <event tick="4608" len="768" a="60" b="70" />
+        <event tick="4608" len="768" a="65" b="70" />
+        <event tick="5376" len="768" a="67" b="70" />
+        <event tick="5376" len="768" a="62" b="70" />
+      </part>
+      <part>
+        <name>syn1</name>
+        <poslen tick="6144" len="6144" />
+        <selected>0</selected>
+        <color>4</color>
+        <zIndex>0</zIndex>
+        <rightClip>0</rightClip>
+        <leftClip>0</leftClip>
+        <event tick="6144" len="768" a="60" b="70" />
+        <event tick="6144" len="768" a="65" b="70" />
+        <event tick="6912" len="768" a="67" b="70" />
+        <event tick="6912" len="768" a="62" b="70" />
+        <event tick="7680" len="768" a="60" b="70" />
+        <event tick="7680" len="768" a="65" b="70" />
+        <event tick="8448" len="768" a="67" b="70" />
+        <event tick="8448" len="768" a="62" b="70" />
+        <event tick="9216" len="768" a="60" b="70" />
+        <event tick="9216" len="768" a="65" b="70" />
+        <event tick="9984" len="768" a="67" b="70" />
+        <event tick="9984" len="768" a="62" b="70" />
+        <event tick="10752" len="768" a="60" b="70" />
+        <event tick="10752" len="768" a="65" b="70" />
+        <event tick="11520" len="768" a="67" b="70" />
+        <event tick="11520" len="768" a="62" b="70" />
+      </part>
+    </miditrack>
+    <AudioOutput>
+      <name>Master</name>
+      <trackId>1328921206007395620</trackId>
+      <record>0</record>
+      <mute>0</mute>
+      <solo>0</solo>
+      <off>0</off>
+      <channels>2</channels>
+      <height>78</height>
+      <locked>0</locked>
+      <reminder1>0</reminder1>
+      <reminder2>0</reminder2>
+      <reminder3>0</reminder3>
+      <collapsed>1</collapsed>
+      <mixertab>0</mixertab>
+      <partcolor>1</partcolor>
+      <MidiAssign port="0" channel="0" enabled="0" preset="0" midimap="0:0:262147:-1:0:0 0:0:7:-1:0:0 0:0:262148:-1:0:0 0:0:262149:-1:0:0 0:0:10:-1:0:0 " />
+      <chainMaster>0</chainMaster>
+      <masterFlag>0</masterFlag>
+      <prefader>0</prefader>
+      <automation>0</automation>
+      <controller id="0" cur="1" color="#ff5a00" visible="0">
+        0 1,         
+      </controller>
+      <controller id="1" cur="0" color="#00db05" visible="0">
+        0 0,         
+      </controller>
+      <controller id="2" cur="0" color="#db0000" visible="0">
+        0 0,         
+      </controller>
+    </AudioOutput>
+    <Route>
+      <source devtype="1" name="drums"/>
+      <dest type="1" name="drumkv1:events-in"/>
+    </Route>
+    <Route>
+      <source devtype="1" name="strings1"/>
+      <dest type="1" name="strings1:events-in"/>
+    </Route>
+    <Route>
+      <source devtype="1" name="bass1"/>
+      <dest type="1" name="bass1:events-in"/>
+    </Route>
+    <Route>
+      <source devtype="1" name="syn1"/>
+      <dest type="1" name="syn1:events-in"/>
+    </Route>
+    <tempolist fix="500000">
+      <tempo at="96">
+        <tick>0</tick>
+        <val>442791</val>
+      </tempo>
+      <tempo at="195">
+        <tick>96</tick>
+        <val>442791</val>
+      </tempo>
+      <tempo at="291">
+        <tick>195</tick>
+        <val>442791</val>
+      </tempo>
+      <tempo at="387">
+        <tick>291</tick>
+        <val>442791</val>
+      </tempo>
+      <tempo at="495">
+        <tick>387</tick>
+        <val>442791</val>
+      </tempo>
+      <tempo at="591">
+        <tick>495</tick>
+        <val>442791</val>
+      </tempo>
+      <tempo at="687">
+        <tick>591</tick>
+        <val>442791</val>
+      </tempo>
+      <tempo at="783">
+        <tick>687</tick>
+        <val>442791</val>
+      </tempo>
+      <tempo at="895">
+        <tick>783</tick>
+        <val>442791</val>
+      </tempo>
+      <tempo at="991">
+        <tick>895</tick>
+        <val>442791</val>
+      </tempo>
+      <tempo at="1087">
+        <tick>991</tick>
+        <val>442791</val>
+      </tempo>
+      <tempo at="1195">
+        <tick>1087</tick>
+        <val>442791</val>
+      </tempo>
+      <tempo at="1295">
+        <tick>1195</tick>
+        <val>442791</val>
+      </tempo>
+      <tempo at="1395">
+        <tick>1295</tick>
+        <val>442791</val>
+      </tempo>
+      <tempo at="1491">
+        <tick>1395</tick>
+        <val>442791</val>
+      </tempo>
+      <tempo at="21474837">
+        <tick>1491</tick>
+        <val>442791</val>
+      </tempo>
+    </tempolist>
+    <siglist>
+      <sig at="21474836">
+        <tick>0</tick>
+        <nom>4</nom>
+        <denom>4</denom>
+      </sig>
+    </siglist>
+  </song>
+</los>
