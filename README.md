@@ -13,9 +13,8 @@ Currently the required applications, tools and plugins to completely load all se
 
 <br/>
 
-<div id="license">
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US">
-<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png"/></a><-
+<img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png"/></a><-
 
 This
 <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Sound" rel="dct:type">work</span>
@@ -24,8 +23,3 @@ by
 is licensed under a
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US">
 Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-</div>
-
-#container img {
-    vertical-align:middle;
-}
