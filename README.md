@@ -13,13 +13,11 @@ Currently the required applications, tools and plugins to completely load all se
 
 <br/>
 
+<p align="center">
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US">
-<img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png"/></a><-
+<img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png"/></a>
 
-This
-<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Sound" rel="dct:type">work</span>
-by
-<span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">falkTX</span>
-is licensed under a
+This work by falkTX is licensed under a
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US">
 Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</p>
