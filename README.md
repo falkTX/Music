@@ -15,7 +15,7 @@ Currently the required applications, tools and plugins to completely load all se
 
 <p align="center">
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US">
-<img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png"/></a>
+<img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png"/></a><br/>
 
 This work by falkTX is licensed under a
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US">
