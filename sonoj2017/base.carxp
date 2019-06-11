@@ -1,0 +1,4414 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE CARLA-PROJECT>
+<CARLA-PROJECT VERSION='2.0'>
+ <EngineSettings>
+  <ForceStereo>false</ForceStereo>
+  <PreferPluginBridges>false</PreferPluginBridges>
+  <PreferUiBridges>true</PreferUiBridges>
+  <UIsAlwaysOnTop>false</UIsAlwaysOnTop>
+  <MaxParameters>200</MaxParameters>
+  <UIBridgesTimeout>4000</UIBridgesTimeout>
+ </EngineSettings>
+
+ <!-- Carla-Rack -->
+ <Plugin>
+  <Info>
+   <Type>INTERNAL</Type>
+   <Name>ringtone-pad</Name>
+   <Label>carlarack</Label>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x3e0</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Tuned</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Base pitch</Name>
+    <Value>60</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Sustain</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Release time</Name>
+    <Value>0.00100000004749745</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Pan / Balance</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/chunk</Type>
+    <Key>State</Key>
+    <Value>
+&lt;?xml version=&apos;1.0&apos; encoding=&apos;UTF-8&apos;?&gt;
+&lt;!DOCTYPE CARLA-PROJECT&gt;
+&lt;CARLA-PROJECT VERSION=&apos;2.0&apos;&gt;
+ &lt;EngineSettings&gt;
+  &lt;ForceStereo&gt;false&lt;/ForceStereo&gt;
+  &lt;PreferPluginBridges&gt;false&lt;/PreferPluginBridges&gt;
+  &lt;PreferUiBridges&gt;true&lt;/PreferUiBridges&gt;
+  &lt;UIsAlwaysOnTop&gt;false&lt;/UIsAlwaysOnTop&gt;
+  &lt;MaxParameters&gt;200&lt;/MaxParameters&gt;
+  &lt;UIBridgesTimeout&gt;4000&lt;/UIBridgesTimeout&gt;
+  &lt;LADSPA_PATH&gt;/home/falktx/.ladspa:/usr/lib/ladspa:/usr/local/lib/ladspa&lt;/LADSPA_PATH&gt;
+  &lt;DSSI_PATH&gt;/home/falktx/.dssi:/usr/lib/dssi:/usr/local/lib/dssi&lt;/DSSI_PATH&gt;
+  &lt;LV2_PATH&gt;/home/falktx/.lv2:/usr/lib/lv2:/usr/local/lib/lv2&lt;/LV2_PATH&gt;
+  &lt;VST2_PATH&gt;/home/falktx/.vst:/home/falktx/.wineflstudio/drive_c/Program Files (x86)/VstPlugins/:/usr/lib/vst:/usr/local/lib/vst&lt;/VST2_PATH&gt;
+  &lt;GIG_PATH&gt;/home/falktx/.sounds/gig:/usr/share/sounds/gig&lt;/GIG_PATH&gt;
+  &lt;SF2_PATH&gt;/home/falktx/.sounds/sf2:/home/falktx/Personal/Muzyks/Kits/SoundFonts:/usr/share/sounds/sf2&lt;/SF2_PATH&gt;
+  &lt;SFZ_PATH&gt;/home/falktx/.sounds/sfz:/home/falktx/Personal/Muzyks/Kits/SFZ:/usr/share/sounds/sfz&lt;/SFZ_PATH&gt;
+ &lt;/EngineSettings&gt;
+
+ &lt;!-- Simple Stereo Sampler --&gt;
+ &lt;Plugin&gt;
+  &lt;Info&gt;
+   &lt;Type&gt;DSSI&lt;/Type&gt;
+   &lt;Name&gt;Simple Stereo Sampler&lt;/Name&gt;
+   &lt;Binary&gt;/usr/lib/dssi/trivial_sampler.so&lt;/Binary&gt;
+   &lt;Label&gt;stereo_sampler&lt;/Label&gt;
+  &lt;/Info&gt;
+
+  &lt;Data&gt;
+   &lt;Active&gt;Yes&lt;/Active&gt;
+   &lt;ControlChannel&gt;1&lt;/ControlChannel&gt;
+   &lt;Options&gt;0x1e0&lt;/Options&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;0&lt;/Index&gt;
+    &lt;Name&gt;Tuned&lt;/Name&gt;
+    &lt;MidiCC&gt;12&lt;/MidiCC&gt;
+    &lt;MidiChannel&gt;1&lt;/MidiChannel&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;1&lt;/Index&gt;
+    &lt;Name&gt;Base pitch&lt;/Name&gt;
+    &lt;MidiCC&gt;13&lt;/MidiCC&gt;
+    &lt;MidiChannel&gt;1&lt;/MidiChannel&gt;
+    &lt;Value&gt;60&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;2&lt;/Index&gt;
+    &lt;Name&gt;Sustain&lt;/Name&gt;
+    &lt;MidiCC&gt;64&lt;/MidiCC&gt;
+    &lt;MidiChannel&gt;1&lt;/MidiChannel&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;3&lt;/Index&gt;
+    &lt;Name&gt;Release time&lt;/Name&gt;
+    &lt;MidiCC&gt;72&lt;/MidiCC&gt;
+    &lt;MidiChannel&gt;1&lt;/MidiChannel&gt;
+    &lt;Value&gt;0.00100000004749745&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;4&lt;/Index&gt;
+    &lt;Name&gt;Pan / Balance&lt;/Name&gt;
+    &lt;MidiCC&gt;10&lt;/MidiCC&gt;
+    &lt;MidiChannel&gt;1&lt;/MidiChannel&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;CustomData&gt;
+    &lt;Type&gt;http://kxstudio.sf.net/ns/carla/string&lt;/Type&gt;
+    &lt;Key&gt;load&lt;/Key&gt;
+    &lt;Value&gt;/home/falktx/Personal/Music/sonoj2017/sample.wav&lt;/Value&gt;
+   &lt;/CustomData&gt;
+
+   &lt;CustomData&gt;
+    &lt;Type&gt;http://kxstudio.sf.net/ns/carla/property&lt;/Type&gt;
+    &lt;Key&gt;CarlaSkinIsCompacted&lt;/Key&gt;
+    &lt;Value&gt;true&lt;/Value&gt;
+   &lt;/CustomData&gt;
+  &lt;/Data&gt;
+ &lt;/Plugin&gt;
+
+ &lt;!-- Ping Pong Pan --&gt;
+ &lt;Plugin&gt;
+  &lt;Info&gt;
+   &lt;Type&gt;INTERNAL&lt;/Type&gt;
+   &lt;Name&gt;Ping Pong Pan&lt;/Name&gt;
+   &lt;Label&gt;pingpongpan&lt;/Label&gt;
+  &lt;/Info&gt;
+
+  &lt;Data&gt;
+   &lt;Active&gt;Yes&lt;/Active&gt;
+   &lt;ControlChannel&gt;1&lt;/ControlChannel&gt;
+   &lt;Options&gt;0x4&lt;/Options&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;0&lt;/Index&gt;
+    &lt;Name&gt;Frequency&lt;/Name&gt;
+    &lt;Value&gt;85&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;1&lt;/Index&gt;
+    &lt;Name&gt;Width&lt;/Name&gt;
+    &lt;Value&gt;75&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;CurrentMidiBank&gt;1&lt;/CurrentMidiBank&gt;
+   &lt;CurrentMidiProgram&gt;1&lt;/CurrentMidiProgram&gt;
+
+   &lt;CustomData&gt;
+    &lt;Type&gt;http://kxstudio.sf.net/ns/carla/property&lt;/Type&gt;
+    &lt;Key&gt;CarlaSkinIsCompacted&lt;/Key&gt;
+    &lt;Value&gt;true&lt;/Value&gt;
+   &lt;/CustomData&gt;
+  &lt;/Data&gt;
+ &lt;/Plugin&gt;
+
+ &lt;!-- Roomy --&gt;
+ &lt;Plugin&gt;
+  &lt;Info&gt;
+   &lt;Type&gt;LV2&lt;/Type&gt;
+   &lt;Name&gt;Roomy&lt;/Name&gt;
+   &lt;URI&gt;http://www.openavproductions.com/artyfx#roomy&lt;/URI&gt;
+  &lt;/Info&gt;
+
+  &lt;Data&gt;
+   &lt;Active&gt;Yes&lt;/Active&gt;
+   &lt;ControlChannel&gt;1&lt;/ControlChannel&gt;
+   &lt;Options&gt;0x0&lt;/Options&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;0&lt;/Index&gt;
+    &lt;Name&gt;Time&lt;/Name&gt;
+    &lt;Symbol&gt;time&lt;/Symbol&gt;
+    &lt;Value&gt;0.910000026226044&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;1&lt;/Index&gt;
+    &lt;Name&gt;Damping&lt;/Name&gt;
+    &lt;Symbol&gt;damping&lt;/Symbol&gt;
+    &lt;Value&gt;0.5&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;2&lt;/Index&gt;
+    &lt;Name&gt;Dry Wet Mix&lt;/Name&gt;
+    &lt;Symbol&gt;dry_wet&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+  &lt;/Data&gt;
+ &lt;/Plugin&gt;
+
+ &lt;!-- Tal-Reverb-III --&gt;
+ &lt;Plugin&gt;
+  &lt;Info&gt;
+   &lt;Type&gt;LV2&lt;/Type&gt;
+   &lt;Name&gt;Tal-Reverb-III&lt;/Name&gt;
+   &lt;URI&gt;urn:juce:TalReverb3&lt;/URI&gt;
+  &lt;/Info&gt;
+
+  &lt;Data&gt;
+   &lt;Active&gt;Yes&lt;/Active&gt;
+   &lt;ControlChannel&gt;1&lt;/ControlChannel&gt;
+   &lt;Options&gt;0x4&lt;/Options&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;1&lt;/Index&gt;
+    &lt;Name&gt;unused&lt;/Name&gt;
+    &lt;Symbol&gt;unused&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;2&lt;/Index&gt;
+    &lt;Name&gt;dry&lt;/Name&gt;
+    &lt;Symbol&gt;dry&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;3&lt;/Index&gt;
+    &lt;Name&gt;wet&lt;/Name&gt;
+    &lt;Symbol&gt;wet&lt;/Symbol&gt;
+    &lt;Value&gt;0.578000009059906&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;4&lt;/Index&gt;
+    &lt;Name&gt;room size&lt;/Name&gt;
+    &lt;Symbol&gt;room_size&lt;/Symbol&gt;
+    &lt;Value&gt;0.61599999666214&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;5&lt;/Index&gt;
+    &lt;Name&gt;pre delay&lt;/Name&gt;
+    &lt;Symbol&gt;pre_delay&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;6&lt;/Index&gt;
+    &lt;Name&gt;low shelf gain&lt;/Name&gt;
+    &lt;Symbol&gt;low_shelf_gain&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;7&lt;/Index&gt;
+    &lt;Name&gt;high shelf gain&lt;/Name&gt;
+    &lt;Symbol&gt;high_shelf_gain&lt;/Symbol&gt;
+    &lt;Value&gt;0.444000005722046&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;8&lt;/Index&gt;
+    &lt;Name&gt;stereo&lt;/Name&gt;
+    &lt;Symbol&gt;stereo&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;9&lt;/Index&gt;
+    &lt;Name&gt;stereo input&lt;/Name&gt;
+    &lt;Symbol&gt;stereo_input&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;10&lt;/Index&gt;
+    &lt;Name&gt;power&lt;/Name&gt;
+    &lt;Symbol&gt;power&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;CustomData&gt;
+    &lt;Type&gt;http://lv2plug.in/ns/ext/atom#String&lt;/Type&gt;
+    &lt;Key&gt;urn:juce:stateString&lt;/Key&gt;
+    &lt;Value&gt;
+&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+
+&amp;lt;tal curprogram=&amp;quot;0&amp;quot; version=&amp;quot;1&amp;quot;&amp;gt;
+  &amp;lt;programs&amp;gt;
+    &amp;lt;program programname=&amp;quot;Stereo Plate&amp;quot; dry=&amp;quot;0&amp;quot; wet=&amp;quot;0.57800000905990600586&amp;quot;
+             roomsize=&amp;quot;0.61599999666213989258&amp;quot; predelay=&amp;quot;0&amp;quot; lowshelfgain=&amp;quot;1&amp;quot;
+             highshelfgain=&amp;quot;0.44400000572204589844&amp;quot; stereowidth=&amp;quot;1&amp;quot; realstereomode=&amp;quot;1&amp;quot;
+             power=&amp;quot;1&amp;quot;/&amp;gt;
+    &amp;lt;program programname=&amp;quot;Short Stereo Plate&amp;quot; dry=&amp;quot;0.5&amp;quot; wet=&amp;quot;0.32100000977516174316&amp;quot;
+             roomsize=&amp;quot;0.23600001633167266846&amp;quot; predelay=&amp;quot;0&amp;quot; lowshelfgain=&amp;quot;1&amp;quot;
+             highshelfgain=&amp;quot;0.3160000145435333252&amp;quot; stereowidth=&amp;quot;1&amp;quot; realstereomode=&amp;quot;1&amp;quot;
+             power=&amp;quot;1&amp;quot;/&amp;gt;
+    &amp;lt;program programname=&amp;quot;High Plate&amp;quot; dry=&amp;quot;0.50400000810623168945&amp;quot; wet=&amp;quot;0.24500000476837158203&amp;quot;
+             roomsize=&amp;quot;0.46000000834465026855&amp;quot; predelay=&amp;quot;0&amp;quot; lowshelfgain=&amp;quot;0.57200002670288085938&amp;quot;
+             highshelfgain=&amp;quot;1&amp;quot; stereowidth=&amp;quot;1&amp;quot; realstereomode=&amp;quot;1&amp;quot; power=&amp;quot;1&amp;quot;/&amp;gt;
+    &amp;lt;program programname=&amp;quot;Long Mono Plate&amp;quot; dry=&amp;quot;0.5&amp;quot; wet=&amp;quot;0.36300000548362731934&amp;quot;
+             roomsize=&amp;quot;0.75600004196166992188&amp;quot; predelay=&amp;quot;0&amp;quot; lowshelfgain=&amp;quot;0.96800005435943603516&amp;quot;
+             highshelfgain=&amp;quot;0.38800001144409179688&amp;quot; stereowidth=&amp;quot;0&amp;quot; realstereomode=&amp;quot;1&amp;quot;
+             power=&amp;quot;1&amp;quot;/&amp;gt;
+    &amp;lt;program programname=&amp;quot;Big Fx Plate&amp;quot; dry=&amp;quot;0.5&amp;quot; wet=&amp;quot;0.31000000238418579102&amp;quot;
+             roomsize=&amp;quot;1&amp;quot; predelay=&amp;quot;0&amp;quot; lowshelfgain=&amp;quot;1&amp;quot; highshelfgain=&amp;quot;1&amp;quot;
+             stereowidth=&amp;quot;1&amp;quot; realstereomode=&amp;quot;1&amp;quot; power=&amp;quot;1&amp;quot;/&amp;gt;
+    &amp;lt;program programname=&amp;quot;Air Plate&amp;quot; dry=&amp;quot;0.5&amp;quot; wet=&amp;quot;0.15700000524520874023&amp;quot;
+             roomsize=&amp;quot;0.66800004243850708008&amp;quot; predelay=&amp;quot;0&amp;quot; lowshelfgain=&amp;quot;0&amp;quot;
+             highshelfgain=&amp;quot;1&amp;quot; stereowidth=&amp;quot;1&amp;quot; realstereomode=&amp;quot;0&amp;quot; power=&amp;quot;1&amp;quot;/&amp;gt;
+    &amp;lt;program programname=&amp;quot;Bass Plate&amp;quot; dry=&amp;quot;0.5&amp;quot; wet=&amp;quot;0.3310000300407409668&amp;quot;
+             roomsize=&amp;quot;0.60400003194808959961&amp;quot; predelay=&amp;quot;0&amp;quot; lowshelfgain=&amp;quot;1&amp;quot;
+             highshelfgain=&amp;quot;0&amp;quot; stereowidth=&amp;quot;1&amp;quot; realstereomode=&amp;quot;1&amp;quot; power=&amp;quot;1&amp;quot;/&amp;gt;
+    &amp;lt;program programname=&amp;quot;Mono Air Plate&amp;quot; dry=&amp;quot;0.5&amp;quot; wet=&amp;quot;0.32100000977516174316&amp;quot;
+             roomsize=&amp;quot;0.52400004863739013672&amp;quot; predelay=&amp;quot;0&amp;quot; lowshelfgain=&amp;quot;0.50400000810623168945&amp;quot;
+             highshelfgain=&amp;quot;0.50800001621246337891&amp;quot; stereowidth=&amp;quot;0&amp;quot; realstereomode=&amp;quot;1&amp;quot;
+             power=&amp;quot;1&amp;quot;/&amp;gt;
+    &amp;lt;program programname=&amp;quot;Short Mono Plate&amp;quot; dry=&amp;quot;0.5&amp;quot; wet=&amp;quot;0.35200002789497375488&amp;quot;
+             roomsize=&amp;quot;0.2280000150203704834&amp;quot; predelay=&amp;quot;0.072000004351139068604&amp;quot;
+             lowshelfgain=&amp;quot;0.8240000605583190918&amp;quot; highshelfgain=&amp;quot;0.064000003039836883545&amp;quot;
+             stereowidth=&amp;quot;0&amp;quot; realstereomode=&amp;quot;1&amp;quot; power=&amp;quot;1&amp;quot;/&amp;gt;
+    &amp;lt;program programname=&amp;quot;Gentle Plate&amp;quot; dry=&amp;quot;0.5&amp;quot; wet=&amp;quot;0.26600000262260437012&amp;quot;
+             roomsize=&amp;quot;0.34000000357627868652&amp;quot; predelay=&amp;quot;0&amp;quot; lowshelfgain=&amp;quot;0.75600004196166992188&amp;quot;
+             highshelfgain=&amp;quot;0.24800001084804534912&amp;quot; stereowidth=&amp;quot;1&amp;quot; realstereomode=&amp;quot;1&amp;quot;
+             power=&amp;quot;1&amp;quot;/&amp;gt;
+  &amp;lt;/programs&amp;gt;
+&amp;lt;/tal&amp;gt;
+
+    &lt;/Value&gt;
+   &lt;/CustomData&gt;
+  &lt;/Data&gt;
+ &lt;/Plugin&gt;
+&lt;/CARLA-PROJECT&gt;
+
+    </Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <!-- Carla-Rack -->
+ <Plugin>
+  <Info>
+   <Type>INTERNAL</Type>
+   <Name>ringtone-sawbass</Name>
+   <Label>carlarack</Label>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <Volume>0.3399735</Volume>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x3e0</Options>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Filter Channel</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Scale</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>prime</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>3rd</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>5th</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>6th</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>7th</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>octave</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>9th</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>11th</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>13th</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>bass</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/chunk</Type>
+    <Key>State</Key>
+    <Value>
+&lt;?xml version=&apos;1.0&apos; encoding=&apos;UTF-8&apos;?&gt;
+&lt;!DOCTYPE CARLA-PROJECT&gt;
+&lt;CARLA-PROJECT VERSION=&apos;2.0&apos;&gt;
+ &lt;EngineSettings&gt;
+  &lt;ForceStereo&gt;false&lt;/ForceStereo&gt;
+  &lt;PreferPluginBridges&gt;false&lt;/PreferPluginBridges&gt;
+  &lt;PreferUiBridges&gt;true&lt;/PreferUiBridges&gt;
+  &lt;UIsAlwaysOnTop&gt;false&lt;/UIsAlwaysOnTop&gt;
+  &lt;MaxParameters&gt;200&lt;/MaxParameters&gt;
+  &lt;UIBridgesTimeout&gt;4000&lt;/UIBridgesTimeout&gt;
+  &lt;LADSPA_PATH&gt;/home/falktx/.ladspa:/usr/lib/ladspa:/usr/local/lib/ladspa&lt;/LADSPA_PATH&gt;
+  &lt;DSSI_PATH&gt;/home/falktx/.dssi:/usr/lib/dssi:/usr/local/lib/dssi&lt;/DSSI_PATH&gt;
+  &lt;LV2_PATH&gt;/home/falktx/.lv2:/usr/lib/lv2:/usr/local/lib/lv2&lt;/LV2_PATH&gt;
+  &lt;VST2_PATH&gt;/home/falktx/.vst:/home/falktx/.wineflstudio/drive_c/Program Files (x86)/VstPlugins/:/usr/lib/vst:/usr/local/lib/vst&lt;/VST2_PATH&gt;
+  &lt;GIG_PATH&gt;/home/falktx/.sounds/gig:/usr/share/sounds/gig&lt;/GIG_PATH&gt;
+  &lt;SF2_PATH&gt;/home/falktx/.sounds/sf2:/home/falktx/Personal/Muzyks/Kits/SoundFonts:/usr/share/sounds/sf2&lt;/SF2_PATH&gt;
+  &lt;SFZ_PATH&gt;/home/falktx/.sounds/sfz:/home/falktx/Personal/Muzyks/Kits/SFZ:/usr/share/sounds/sfz&lt;/SFZ_PATH&gt;
+ &lt;/EngineSettings&gt;
+
+ &lt;!-- MIDI Chord --&gt;
+ &lt;Plugin&gt;
+  &lt;Info&gt;
+   &lt;Type&gt;LV2&lt;/Type&gt;
+   &lt;Name&gt;MIDI Chord&lt;/Name&gt;
+   &lt;URI&gt;http://gareus.org/oss/lv2/midifilter#midichord&lt;/URI&gt;
+  &lt;/Info&gt;
+
+  &lt;Data&gt;
+   &lt;Active&gt;Yes&lt;/Active&gt;
+   &lt;ControlChannel&gt;1&lt;/ControlChannel&gt;
+   &lt;Options&gt;0x1e1&lt;/Options&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;1&lt;/Index&gt;
+    &lt;Name&gt;Filter Channel&lt;/Name&gt;
+    &lt;Symbol&gt;channelf&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;2&lt;/Index&gt;
+    &lt;Name&gt;Scale&lt;/Name&gt;
+    &lt;Symbol&gt;scale&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;3&lt;/Index&gt;
+    &lt;Name&gt;prime&lt;/Name&gt;
+    &lt;Symbol&gt;c1&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;4&lt;/Index&gt;
+    &lt;Name&gt;3rd&lt;/Name&gt;
+    &lt;Symbol&gt;c3&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;5&lt;/Index&gt;
+    &lt;Name&gt;5th&lt;/Name&gt;
+    &lt;Symbol&gt;c5&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;6&lt;/Index&gt;
+    &lt;Name&gt;6th&lt;/Name&gt;
+    &lt;Symbol&gt;c6&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;7&lt;/Index&gt;
+    &lt;Name&gt;7th&lt;/Name&gt;
+    &lt;Symbol&gt;c7&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;8&lt;/Index&gt;
+    &lt;Name&gt;octave&lt;/Name&gt;
+    &lt;Symbol&gt;c8&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;9&lt;/Index&gt;
+    &lt;Name&gt;9th&lt;/Name&gt;
+    &lt;Symbol&gt;c9&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;10&lt;/Index&gt;
+    &lt;Name&gt;11th&lt;/Name&gt;
+    &lt;Symbol&gt;c11&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;11&lt;/Index&gt;
+    &lt;Name&gt;13th&lt;/Name&gt;
+    &lt;Symbol&gt;c13&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;12&lt;/Index&gt;
+    &lt;Name&gt;bass&lt;/Name&gt;
+    &lt;Symbol&gt;_8&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+  &lt;/Data&gt;
+ &lt;/Plugin&gt;
+
+ &lt;!-- QMidiArp Arp --&gt;
+ &lt;Plugin&gt;
+  &lt;Info&gt;
+   &lt;Type&gt;LV2&lt;/Type&gt;
+   &lt;Name&gt;QMidiArp Arp&lt;/Name&gt;
+   &lt;URI&gt;https://git.code.sf.net/p/qmidiarp/arp&lt;/URI&gt;
+  &lt;/Info&gt;
+
+  &lt;Data&gt;
+   &lt;Active&gt;Yes&lt;/Active&gt;
+   &lt;ControlChannel&gt;1&lt;/ControlChannel&gt;
+   &lt;Options&gt;0x1e1&lt;/Options&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;0&lt;/Index&gt;
+    &lt;Name&gt;Attack&lt;/Name&gt;
+    &lt;Symbol&gt;ATTACK&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;1&lt;/Index&gt;
+    &lt;Name&gt;Release&lt;/Name&gt;
+    &lt;Symbol&gt;RELEASE&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;2&lt;/Index&gt;
+    &lt;Name&gt;Random Tick&lt;/Name&gt;
+    &lt;Symbol&gt;RANDOM_TICK&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;3&lt;/Index&gt;
+    &lt;Name&gt;Random Length&lt;/Name&gt;
+    &lt;Symbol&gt;RANDOM_LEN&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;4&lt;/Index&gt;
+    &lt;Name&gt;Random Velocity&lt;/Name&gt;
+    &lt;Symbol&gt;RANDOM_VEL&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;5&lt;/Index&gt;
+    &lt;Name&gt;Output Channel&lt;/Name&gt;
+    &lt;Symbol&gt;CH_OUT&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;6&lt;/Index&gt;
+    &lt;Name&gt;Input Channel&lt;/Name&gt;
+    &lt;Symbol&gt;CH_IN&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;8&lt;/Index&gt;
+    &lt;Name&gt;Restart&lt;/Name&gt;
+    &lt;Symbol&gt;ENABLE_RESTARTBYKBD&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;9&lt;/Index&gt;
+    &lt;Name&gt;Trigger&lt;/Name&gt;
+    &lt;Symbol&gt;ENABLE_TRIGBYKBD&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;10&lt;/Index&gt;
+    &lt;Name&gt;Mute Output&lt;/Name&gt;
+    &lt;Symbol&gt;MUTE&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;11&lt;/Index&gt;
+    &lt;Name&gt;Latch mode&lt;/Name&gt;
+    &lt;Symbol&gt;LATCH_MODE&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;12&lt;/Index&gt;
+    &lt;Name&gt;Octave Mode&lt;/Name&gt;
+    &lt;Symbol&gt;OCTAVE_MODE&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;13&lt;/Index&gt;
+    &lt;Name&gt;Low octave limit&lt;/Name&gt;
+    &lt;Symbol&gt;OCTAVE_LOW&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;14&lt;/Index&gt;
+    &lt;Name&gt;High octave limit&lt;/Name&gt;
+    &lt;Symbol&gt;OCTAVE_HIGH&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;15&lt;/Index&gt;
+    &lt;Name&gt;Index In 1&lt;/Name&gt;
+    &lt;Symbol&gt;INDEX_IN1&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;16&lt;/Index&gt;
+    &lt;Name&gt;Index In 2&lt;/Name&gt;
+    &lt;Symbol&gt;INDEX_IN2&lt;/Symbol&gt;
+    &lt;Value&gt;127&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;17&lt;/Index&gt;
+    &lt;Name&gt;Range In 1&lt;/Name&gt;
+    &lt;Symbol&gt;RANGE_IN1&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;18&lt;/Index&gt;
+    &lt;Name&gt;Range In 2&lt;/Name&gt;
+    &lt;Symbol&gt;RANGE_IN2&lt;/Symbol&gt;
+    &lt;Value&gt;127&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;19&lt;/Index&gt;
+    &lt;Name&gt;Trigger Legato&lt;/Name&gt;
+    &lt;Symbol&gt;ENABLE_TRIGLEGATO&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;20&lt;/Index&gt;
+    &lt;Name&gt;Repeat Mode&lt;/Name&gt;
+    &lt;Symbol&gt;REPEAT_MODE&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;22&lt;/Index&gt;
+    &lt;Name&gt;Defer mute&lt;/Name&gt;
+    &lt;Symbol&gt;DEFER&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;23&lt;/Index&gt;
+    &lt;Name&gt;Pattern Preset&lt;/Name&gt;
+    &lt;Symbol&gt;PATTERN_PRESET&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;24&lt;/Index&gt;
+    &lt;Name&gt;Transport Mode&lt;/Name&gt;
+    &lt;Symbol&gt;TRANSPORT_MODE&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;25&lt;/Index&gt;
+    &lt;Name&gt;Internal Tempo&lt;/Name&gt;
+    &lt;Symbol&gt;TEMPO&lt;/Symbol&gt;
+    &lt;Value&gt;120&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;CustomData&gt;
+    &lt;Type&gt;http://lv2plug.in/ns/ext/atom#String&lt;/Type&gt;
+    &lt;Key&gt;https://git.code.sf.net/p/qmidiarp#ARPPATTERN&lt;/Key&gt;
+    &lt;Value&gt;&amp;gt;&amp;gt;///0\ \ \ 0+////0\ \ \ \ -00+0-00+0-00+0-00+0-0&lt;/Value&gt;
+   &lt;/CustomData&gt;
+  &lt;/Data&gt;
+ &lt;/Plugin&gt;
+
+ &lt;!-- Simple Stereo Sampler --&gt;
+ &lt;Plugin&gt;
+  &lt;Info&gt;
+   &lt;Type&gt;DSSI&lt;/Type&gt;
+   &lt;Name&gt;Simple Stereo Sampler&lt;/Name&gt;
+   &lt;Binary&gt;/usr/lib/dssi/trivial_sampler.so&lt;/Binary&gt;
+   &lt;Label&gt;stereo_sampler&lt;/Label&gt;
+  &lt;/Info&gt;
+
+  &lt;Data&gt;
+   &lt;Active&gt;Yes&lt;/Active&gt;
+   &lt;ControlChannel&gt;1&lt;/ControlChannel&gt;
+   &lt;Options&gt;0x1e0&lt;/Options&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;0&lt;/Index&gt;
+    &lt;Name&gt;Tuned&lt;/Name&gt;
+    &lt;MidiCC&gt;12&lt;/MidiCC&gt;
+    &lt;MidiChannel&gt;1&lt;/MidiChannel&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;1&lt;/Index&gt;
+    &lt;Name&gt;Base pitch&lt;/Name&gt;
+    &lt;MidiCC&gt;13&lt;/MidiCC&gt;
+    &lt;MidiChannel&gt;1&lt;/MidiChannel&gt;
+    &lt;Value&gt;60&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;2&lt;/Index&gt;
+    &lt;Name&gt;Sustain&lt;/Name&gt;
+    &lt;MidiCC&gt;64&lt;/MidiCC&gt;
+    &lt;MidiChannel&gt;1&lt;/MidiChannel&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;3&lt;/Index&gt;
+    &lt;Name&gt;Release time&lt;/Name&gt;
+    &lt;MidiCC&gt;72&lt;/MidiCC&gt;
+    &lt;MidiChannel&gt;1&lt;/MidiChannel&gt;
+    &lt;Value&gt;0.00100000004749745&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;4&lt;/Index&gt;
+    &lt;Name&gt;Pan / Balance&lt;/Name&gt;
+    &lt;MidiCC&gt;10&lt;/MidiCC&gt;
+    &lt;MidiChannel&gt;1&lt;/MidiChannel&gt;
+    &lt;Value&gt;-0.00999999977648258&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;CustomData&gt;
+    &lt;Type&gt;http://kxstudio.sf.net/ns/carla/string&lt;/Type&gt;
+    &lt;Key&gt;load&lt;/Key&gt;
+    &lt;Value&gt;/home/falktx/Personal/Music/sonoj2017/sample.wav&lt;/Value&gt;
+   &lt;/CustomData&gt;
+  &lt;/Data&gt;
+ &lt;/Plugin&gt;
+
+ &lt;!-- dRowAudio: Distortion Shaper --&gt;
+ &lt;Plugin&gt;
+  &lt;Info&gt;
+   &lt;Type&gt;LV2&lt;/Type&gt;
+   &lt;Name&gt;dRowAudio. Distortion Shaper&lt;/Name&gt;
+   &lt;URI&gt;http://www.drowaudio.co.uk/audio/audio_plugins/distortion_shaper&lt;/URI&gt;
+  &lt;/Info&gt;
+
+  &lt;Data&gt;
+   &lt;Active&gt;Yes&lt;/Active&gt;
+   &lt;ControlChannel&gt;1&lt;/ControlChannel&gt;
+   &lt;Options&gt;0x4&lt;/Options&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;1&lt;/Index&gt;
+    &lt;Name&gt;Input Gain&lt;/Name&gt;
+    &lt;Symbol&gt;input_gain&lt;/Symbol&gt;
+    &lt;Value&gt;0.605832993984222&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;2&lt;/Index&gt;
+    &lt;Name&gt;Output&lt;/Name&gt;
+    &lt;Symbol&gt;output&lt;/Symbol&gt;
+    &lt;Value&gt;0.365833014249802&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;3&lt;/Index&gt;
+    &lt;Name&gt;Pre Filter&lt;/Name&gt;
+    &lt;Symbol&gt;pre_filter&lt;/Symbol&gt;
+    &lt;Value&gt;0.064241997897625&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;4&lt;/Index&gt;
+    &lt;Name&gt;Post Filter&lt;/Name&gt;
+    &lt;Symbol&gt;post_filter&lt;/Symbol&gt;
+    &lt;Value&gt;0.972121000289917&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;5&lt;/Index&gt;
+    &lt;Name&gt;x1&lt;/Name&gt;
+    &lt;Symbol&gt;x1&lt;/Symbol&gt;
+    &lt;Value&gt;0.200000002980232&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;6&lt;/Index&gt;
+    &lt;Name&gt;y1&lt;/Name&gt;
+    &lt;Symbol&gt;y1&lt;/Symbol&gt;
+    &lt;Value&gt;0.509999990463257&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;7&lt;/Index&gt;
+    &lt;Name&gt;x2&lt;/Name&gt;
+    &lt;Symbol&gt;x2&lt;/Symbol&gt;
+    &lt;Value&gt;0.735000014305115&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;8&lt;/Index&gt;
+    &lt;Name&gt;y2&lt;/Name&gt;
+    &lt;Symbol&gt;y2&lt;/Symbol&gt;
+    &lt;Value&gt;0.665000021457672&lt;/Value&gt;
+   &lt;/Parameter&gt;
+  &lt;/Data&gt;
+ &lt;/Plugin&gt;
+
+ &lt;!-- x42-eq - Parametric Equalizer Stereo --&gt;
+ &lt;Plugin&gt;
+  &lt;Info&gt;
+   &lt;Type&gt;LV2&lt;/Type&gt;
+   &lt;Name&gt;x42-eq - Parametric Equalizer Stereo&lt;/Name&gt;
+   &lt;URI&gt;http://gareus.org/oss/lv2/fil4#stereo&lt;/URI&gt;
+  &lt;/Info&gt;
+
+  &lt;Data&gt;
+   &lt;Active&gt;Yes&lt;/Active&gt;
+   &lt;ControlChannel&gt;1&lt;/ControlChannel&gt;
+   &lt;Options&gt;0x0&lt;/Options&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;0&lt;/Index&gt;
+    &lt;Name&gt;Enable&lt;/Name&gt;
+    &lt;Symbol&gt;enable&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;1&lt;/Index&gt;
+    &lt;Name&gt;Gain&lt;/Name&gt;
+    &lt;Symbol&gt;gain&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;3&lt;/Index&gt;
+    &lt;Name&gt;Reset Peak Hold&lt;/Name&gt;
+    &lt;Symbol&gt;peakreset&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;4&lt;/Index&gt;
+    &lt;Name&gt;Highpass&lt;/Name&gt;
+    &lt;Symbol&gt;HighPass&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;5&lt;/Index&gt;
+    &lt;Name&gt;Highpass Frequency&lt;/Name&gt;
+    &lt;Symbol&gt;HPfreq&lt;/Symbol&gt;
+    &lt;Value&gt;20&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;6&lt;/Index&gt;
+    &lt;Name&gt;HighPass Resonance&lt;/Name&gt;
+    &lt;Symbol&gt;HPQ&lt;/Symbol&gt;
+    &lt;Value&gt;0.699999988079071&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;7&lt;/Index&gt;
+    &lt;Name&gt;Lowpass&lt;/Name&gt;
+    &lt;Symbol&gt;LowPass&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;8&lt;/Index&gt;
+    &lt;Name&gt;Lowpass Frequency&lt;/Name&gt;
+    &lt;Symbol&gt;LPfreq&lt;/Symbol&gt;
+    &lt;Value&gt;20000&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;9&lt;/Index&gt;
+    &lt;Name&gt;LowPass Resonance&lt;/Name&gt;
+    &lt;Symbol&gt;LPQ&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;10&lt;/Index&gt;
+    &lt;Name&gt;Lowshelf&lt;/Name&gt;
+    &lt;Symbol&gt;LSsec&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;11&lt;/Index&gt;
+    &lt;Name&gt;Lowshelf Frequency&lt;/Name&gt;
+    &lt;Symbol&gt;LSfreq&lt;/Symbol&gt;
+    &lt;Value&gt;80&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;12&lt;/Index&gt;
+    &lt;Name&gt;Lowshelf Bandwidth&lt;/Name&gt;
+    &lt;Symbol&gt;LSq&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;13&lt;/Index&gt;
+    &lt;Name&gt;Lowshelf Gain&lt;/Name&gt;
+    &lt;Symbol&gt;LSgain&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;14&lt;/Index&gt;
+    &lt;Name&gt;Section 1&lt;/Name&gt;
+    &lt;Symbol&gt;sec1&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;15&lt;/Index&gt;
+    &lt;Name&gt;Frequency 1&lt;/Name&gt;
+    &lt;Symbol&gt;freq1&lt;/Symbol&gt;
+    &lt;Value&gt;439.678497314453&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;16&lt;/Index&gt;
+    &lt;Name&gt;Bandwidth 1&lt;/Name&gt;
+    &lt;Symbol&gt;q1&lt;/Symbol&gt;
+    &lt;Value&gt;0.164939001202583&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;17&lt;/Index&gt;
+    &lt;Name&gt;Gain 1&lt;/Name&gt;
+    &lt;Symbol&gt;gain1&lt;/Symbol&gt;
+    &lt;Value&gt;7.40000009536743&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;18&lt;/Index&gt;
+    &lt;Name&gt;Section 2&lt;/Name&gt;
+    &lt;Symbol&gt;sec2&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;19&lt;/Index&gt;
+    &lt;Name&gt;Frequency 2&lt;/Name&gt;
+    &lt;Symbol&gt;freq2&lt;/Symbol&gt;
+    &lt;Value&gt;397.000030517578&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;20&lt;/Index&gt;
+    &lt;Name&gt;Bandwidth 2&lt;/Name&gt;
+    &lt;Symbol&gt;q2&lt;/Symbol&gt;
+    &lt;Value&gt;0.601512014865875&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;21&lt;/Index&gt;
+    &lt;Name&gt;Gain 2&lt;/Name&gt;
+    &lt;Symbol&gt;gain2&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;22&lt;/Index&gt;
+    &lt;Name&gt;Section 3&lt;/Name&gt;
+    &lt;Symbol&gt;sec3&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;23&lt;/Index&gt;
+    &lt;Name&gt;Frequency 3&lt;/Name&gt;
+    &lt;Symbol&gt;freq3&lt;/Symbol&gt;
+    &lt;Value&gt;1250.00012207031&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;24&lt;/Index&gt;
+    &lt;Name&gt;Bandwidth 3&lt;/Name&gt;
+    &lt;Symbol&gt;q3&lt;/Symbol&gt;
+    &lt;Value&gt;0.601512014865875&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;25&lt;/Index&gt;
+    &lt;Name&gt;Gain 3&lt;/Name&gt;
+    &lt;Symbol&gt;gain3&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;26&lt;/Index&gt;
+    &lt;Name&gt;Section 4&lt;/Name&gt;
+    &lt;Symbol&gt;sec4&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;27&lt;/Index&gt;
+    &lt;Name&gt;Frequency 4&lt;/Name&gt;
+    &lt;Symbol&gt;freq4&lt;/Symbol&gt;
+    &lt;Value&gt;2405.986328125&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;28&lt;/Index&gt;
+    &lt;Name&gt;Bandwidth 4&lt;/Name&gt;
+    &lt;Symbol&gt;q4&lt;/Symbol&gt;
+    &lt;Value&gt;0.601512014865875&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;29&lt;/Index&gt;
+    &lt;Name&gt;Gain 4&lt;/Name&gt;
+    &lt;Symbol&gt;gain4&lt;/Symbol&gt;
+    &lt;Value&gt;-12.3999996185303&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;30&lt;/Index&gt;
+    &lt;Name&gt;Highshelf&lt;/Name&gt;
+    &lt;Symbol&gt;HSsec&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;31&lt;/Index&gt;
+    &lt;Name&gt;Highshelf Frequency&lt;/Name&gt;
+    &lt;Symbol&gt;HSfreq&lt;/Symbol&gt;
+    &lt;Value&gt;7292.42578125&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;32&lt;/Index&gt;
+    &lt;Name&gt;Highshelf Bandwidth&lt;/Name&gt;
+    &lt;Symbol&gt;HSq&lt;/Symbol&gt;
+    &lt;Value&gt;1.01395905017853&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;33&lt;/Index&gt;
+    &lt;Name&gt;Highshelf Gain&lt;/Name&gt;
+    &lt;Symbol&gt;HSgain&lt;/Symbol&gt;
+    &lt;Value&gt;12.3999996185303&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;CustomData&gt;
+    &lt;Type&gt;http://lv2plug.in/ns/ext/atom#Float&lt;/Type&gt;
+    &lt;Key&gt;http://gareus.org/oss/lv2/fil4#dbscale&lt;/Key&gt;
+    &lt;Value&gt;AADwQQ==&lt;/Value&gt;
+   &lt;/CustomData&gt;
+
+   &lt;CustomData&gt;
+    &lt;Type&gt;http://lv2plug.in/ns/ext/atom#Float&lt;/Type&gt;
+    &lt;Key&gt;http://gareus.org/oss/lv2/fil4#fftgain&lt;/Key&gt;
+    &lt;Value&gt;AAAAAA==&lt;/Value&gt;
+   &lt;/CustomData&gt;
+
+   &lt;CustomData&gt;
+    &lt;Type&gt;http://lv2plug.in/ns/ext/atom#Float&lt;/Type&gt;
+    &lt;Key&gt;http://gareus.org/oss/lv2/fil4#uiscale&lt;/Key&gt;
+    &lt;Value&gt;AACAPw==&lt;/Value&gt;
+   &lt;/CustomData&gt;
+
+   &lt;CustomData&gt;
+    &lt;Type&gt;http://lv2plug.in/ns/ext/atom#Int&lt;/Type&gt;
+    &lt;Key&gt;http://gareus.org/oss/lv2/fil4#fftmode&lt;/Key&gt;
+    &lt;Value&gt;ARIAAA==&lt;/Value&gt;
+   &lt;/CustomData&gt;
+
+   &lt;CustomData&gt;
+    &lt;Type&gt;http://lv2plug.in/ns/ext/atom#Int&lt;/Type&gt;
+    &lt;Key&gt;http://gareus.org/oss/lv2/fil4#fftchannel&lt;/Key&gt;
+    &lt;Value&gt;/////w==&lt;/Value&gt;
+   &lt;/CustomData&gt;
+  &lt;/Data&gt;
+ &lt;/Plugin&gt;
+
+ &lt;!-- Panda --&gt;
+ &lt;Plugin&gt;
+  &lt;Info&gt;
+   &lt;Type&gt;LV2&lt;/Type&gt;
+   &lt;Name&gt;Panda&lt;/Name&gt;
+   &lt;URI&gt;http://www.openavproductions.com/artyfx#panda&lt;/URI&gt;
+  &lt;/Info&gt;
+
+  &lt;Data&gt;
+   &lt;Active&gt;Yes&lt;/Active&gt;
+   &lt;ControlChannel&gt;1&lt;/ControlChannel&gt;
+   &lt;Options&gt;0x0&lt;/Options&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;0&lt;/Index&gt;
+    &lt;Name&gt;Factor&lt;/Name&gt;
+    &lt;Symbol&gt;factor&lt;/Symbol&gt;
+    &lt;Value&gt;0.579999983310699&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;1&lt;/Index&gt;
+    &lt;Name&gt;Threshold&lt;/Name&gt;
+    &lt;Symbol&gt;threshold&lt;/Symbol&gt;
+    &lt;Value&gt;0.389999985694885&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;2&lt;/Index&gt;
+    &lt;Name&gt;Attack&lt;/Name&gt;
+    &lt;Symbol&gt;attack&lt;/Symbol&gt;
+    &lt;Value&gt;0.5&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;3&lt;/Index&gt;
+    &lt;Name&gt;Release&lt;/Name&gt;
+    &lt;Symbol&gt;release&lt;/Symbol&gt;
+    &lt;Value&gt;0.379999995231628&lt;/Value&gt;
+   &lt;/Parameter&gt;
+  &lt;/Data&gt;
+ &lt;/Plugin&gt;
+&lt;/CARLA-PROJECT&gt;
+
+    </Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <!-- MIDI Step Sequencer8x8 -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>main chord</Name>
+   <URI>http://gareus.org/oss/lv2/stepseq#s8n8</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x1</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Sync</Name>
+    <Symbol>sync</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>BPM</Name>
+    <Symbol>bpm</Symbol>
+    <Value>120</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Step Duration (4/4)</Name>
+    <Symbol>div</Symbol>
+    <Value>6</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Swing</Name>
+    <Symbol>swing</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Drum Mode</Name>
+    <Symbol>drummode</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>Midi Channel</Name>
+    <Symbol>chn</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>MIDI Panic</Name>
+    <Symbol>panic</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Note 1</Name>
+    <Symbol>note1</Symbol>
+    <Value>69</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Note 2</Name>
+    <Symbol>note2</Symbol>
+    <Value>67</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Note 3</Name>
+    <Symbol>note3</Symbol>
+    <Value>65</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Note 4</Name>
+    <Symbol>note4</Symbol>
+    <Value>41</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Note 5</Name>
+    <Symbol>note5</Symbol>
+    <Value>48</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>Note 6</Name>
+    <Symbol>note6</Symbol>
+    <Value>43</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>15</Index>
+    <Name>Note 7</Name>
+    <Symbol>note7</Symbol>
+    <Value>45</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>16</Index>
+    <Name>Note 8</Name>
+    <Symbol>note8</Symbol>
+    <Value>47</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>17</Index>
+    <Name>Grid S: 1 N: 1</Name>
+    <Symbol>grid_1_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>18</Index>
+    <Name>Grid S: 2 N: 1</Name>
+    <Symbol>grid_2_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>19</Index>
+    <Name>Grid S: 3 N: 1</Name>
+    <Symbol>grid_3_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>20</Index>
+    <Name>Grid S: 4 N: 1</Name>
+    <Symbol>grid_4_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>21</Index>
+    <Name>Grid S: 5 N: 1</Name>
+    <Symbol>grid_5_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>22</Index>
+    <Name>Grid S: 6 N: 1</Name>
+    <Symbol>grid_6_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>23</Index>
+    <Name>Grid S: 7 N: 1</Name>
+    <Symbol>grid_7_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>24</Index>
+    <Name>Grid S: 8 N: 1</Name>
+    <Symbol>grid_8_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>25</Index>
+    <Name>Grid S: 1 N: 2</Name>
+    <Symbol>grid_1_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>26</Index>
+    <Name>Grid S: 2 N: 2</Name>
+    <Symbol>grid_2_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>27</Index>
+    <Name>Grid S: 3 N: 2</Name>
+    <Symbol>grid_3_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>28</Index>
+    <Name>Grid S: 4 N: 2</Name>
+    <Symbol>grid_4_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>29</Index>
+    <Name>Grid S: 5 N: 2</Name>
+    <Symbol>grid_5_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>30</Index>
+    <Name>Grid S: 6 N: 2</Name>
+    <Symbol>grid_6_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>31</Index>
+    <Name>Grid S: 7 N: 2</Name>
+    <Symbol>grid_7_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>32</Index>
+    <Name>Grid S: 8 N: 2</Name>
+    <Symbol>grid_8_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>33</Index>
+    <Name>Grid S: 1 N: 3</Name>
+    <Symbol>grid_1_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>34</Index>
+    <Name>Grid S: 2 N: 3</Name>
+    <Symbol>grid_2_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>35</Index>
+    <Name>Grid S: 3 N: 3</Name>
+    <Symbol>grid_3_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>36</Index>
+    <Name>Grid S: 4 N: 3</Name>
+    <Symbol>grid_4_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>37</Index>
+    <Name>Grid S: 5 N: 3</Name>
+    <Symbol>grid_5_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>38</Index>
+    <Name>Grid S: 6 N: 3</Name>
+    <Symbol>grid_6_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>39</Index>
+    <Name>Grid S: 7 N: 3</Name>
+    <Symbol>grid_7_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>40</Index>
+    <Name>Grid S: 8 N: 3</Name>
+    <Symbol>grid_8_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>41</Index>
+    <Name>Grid S: 1 N: 4</Name>
+    <Symbol>grid_1_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>42</Index>
+    <Name>Grid S: 2 N: 4</Name>
+    <Symbol>grid_2_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>43</Index>
+    <Name>Grid S: 3 N: 4</Name>
+    <Symbol>grid_3_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>44</Index>
+    <Name>Grid S: 4 N: 4</Name>
+    <Symbol>grid_4_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>45</Index>
+    <Name>Grid S: 5 N: 4</Name>
+    <Symbol>grid_5_4</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>46</Index>
+    <Name>Grid S: 6 N: 4</Name>
+    <Symbol>grid_6_4</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>47</Index>
+    <Name>Grid S: 7 N: 4</Name>
+    <Symbol>grid_7_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>48</Index>
+    <Name>Grid S: 8 N: 4</Name>
+    <Symbol>grid_8_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>49</Index>
+    <Name>Grid S: 1 N: 5</Name>
+    <Symbol>grid_1_5</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>50</Index>
+    <Name>Grid S: 2 N: 5</Name>
+    <Symbol>grid_2_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>51</Index>
+    <Name>Grid S: 3 N: 5</Name>
+    <Symbol>grid_3_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>52</Index>
+    <Name>Grid S: 4 N: 5</Name>
+    <Symbol>grid_4_5</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>53</Index>
+    <Name>Grid S: 5 N: 5</Name>
+    <Symbol>grid_5_5</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>54</Index>
+    <Name>Grid S: 6 N: 5</Name>
+    <Symbol>grid_6_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>55</Index>
+    <Name>Grid S: 7 N: 5</Name>
+    <Symbol>grid_7_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>56</Index>
+    <Name>Grid S: 8 N: 5</Name>
+    <Symbol>grid_8_5</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>57</Index>
+    <Name>Grid S: 1 N: 6</Name>
+    <Symbol>grid_1_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>58</Index>
+    <Name>Grid S: 2 N: 6</Name>
+    <Symbol>grid_2_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>59</Index>
+    <Name>Grid S: 3 N: 6</Name>
+    <Symbol>grid_3_6</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>60</Index>
+    <Name>Grid S: 4 N: 6</Name>
+    <Symbol>grid_4_6</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>61</Index>
+    <Name>Grid S: 5 N: 6</Name>
+    <Symbol>grid_5_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>62</Index>
+    <Name>Grid S: 6 N: 6</Name>
+    <Symbol>grid_6_6</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>63</Index>
+    <Name>Grid S: 7 N: 6</Name>
+    <Symbol>grid_7_6</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>64</Index>
+    <Name>Grid S: 8 N: 6</Name>
+    <Symbol>grid_8_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>65</Index>
+    <Name>Grid S: 1 N: 7</Name>
+    <Symbol>grid_1_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>66</Index>
+    <Name>Grid S: 2 N: 7</Name>
+    <Symbol>grid_2_7</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>67</Index>
+    <Name>Grid S: 3 N: 7</Name>
+    <Symbol>grid_3_7</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>68</Index>
+    <Name>Grid S: 4 N: 7</Name>
+    <Symbol>grid_4_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>69</Index>
+    <Name>Grid S: 5 N: 7</Name>
+    <Symbol>grid_5_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>70</Index>
+    <Name>Grid S: 6 N: 7</Name>
+    <Symbol>grid_6_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>71</Index>
+    <Name>Grid S: 7 N: 7</Name>
+    <Symbol>grid_7_7</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>72</Index>
+    <Name>Grid S: 8 N: 7</Name>
+    <Symbol>grid_8_7</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>73</Index>
+    <Name>Grid S: 1 N: 8</Name>
+    <Symbol>grid_1_8</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>74</Index>
+    <Name>Grid S: 2 N: 8</Name>
+    <Symbol>grid_2_8</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>75</Index>
+    <Name>Grid S: 3 N: 8</Name>
+    <Symbol>grid_3_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>76</Index>
+    <Name>Grid S: 4 N: 8</Name>
+    <Symbol>grid_4_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>77</Index>
+    <Name>Grid S: 5 N: 8</Name>
+    <Symbol>grid_5_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>78</Index>
+    <Name>Grid S: 6 N: 8</Name>
+    <Symbol>grid_6_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>79</Index>
+    <Name>Grid S: 7 N: 8</Name>
+    <Symbol>grid_7_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>80</Index>
+    <Name>Grid S: 8 N: 8</Name>
+    <Symbol>grid_8_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+  </Data>
+ </Plugin>
+
+ <!-- Carla-Rack -->
+ <Plugin>
+  <Info>
+   <Type>INTERNAL</Type>
+   <Name>high arp</Name>
+   <Label>carlarack</Label>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x3e0</Options>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Filter Channel</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Scale</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>prime</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>3rd</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>5th</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>6th</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>7th</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>octave</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>9th</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>11th</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>13th</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>bass</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/chunk</Type>
+    <Key>State</Key>
+    <Value>
+&lt;?xml version=&apos;1.0&apos; encoding=&apos;UTF-8&apos;?&gt;
+&lt;!DOCTYPE CARLA-PROJECT&gt;
+&lt;CARLA-PROJECT VERSION=&apos;2.0&apos;&gt;
+ &lt;EngineSettings&gt;
+  &lt;ForceStereo&gt;false&lt;/ForceStereo&gt;
+  &lt;PreferPluginBridges&gt;false&lt;/PreferPluginBridges&gt;
+  &lt;PreferUiBridges&gt;true&lt;/PreferUiBridges&gt;
+  &lt;UIsAlwaysOnTop&gt;false&lt;/UIsAlwaysOnTop&gt;
+  &lt;MaxParameters&gt;200&lt;/MaxParameters&gt;
+  &lt;UIBridgesTimeout&gt;4000&lt;/UIBridgesTimeout&gt;
+  &lt;LADSPA_PATH&gt;/home/falktx/.ladspa:/usr/lib/ladspa:/usr/local/lib/ladspa&lt;/LADSPA_PATH&gt;
+  &lt;DSSI_PATH&gt;/home/falktx/.dssi:/usr/lib/dssi:/usr/local/lib/dssi&lt;/DSSI_PATH&gt;
+  &lt;LV2_PATH&gt;/home/falktx/.lv2:/usr/lib/lv2:/usr/local/lib/lv2&lt;/LV2_PATH&gt;
+  &lt;VST2_PATH&gt;/home/falktx/.vst:/home/falktx/.wineflstudio/drive_c/Program Files (x86)/VstPlugins/:/usr/lib/vst:/usr/local/lib/vst&lt;/VST2_PATH&gt;
+  &lt;GIG_PATH&gt;/home/falktx/.sounds/gig:/usr/share/sounds/gig&lt;/GIG_PATH&gt;
+  &lt;SF2_PATH&gt;/home/falktx/.sounds/sf2:/home/falktx/Personal/Muzyks/Kits/SoundFonts:/usr/share/sounds/sf2&lt;/SF2_PATH&gt;
+  &lt;SFZ_PATH&gt;/home/falktx/.sounds/sfz:/home/falktx/Personal/Muzyks/Kits/SFZ:/usr/share/sounds/sfz&lt;/SFZ_PATH&gt;
+ &lt;/EngineSettings&gt;
+
+ &lt;!-- MIDI Chord --&gt;
+ &lt;Plugin&gt;
+  &lt;Info&gt;
+   &lt;Type&gt;LV2&lt;/Type&gt;
+   &lt;Name&gt;MIDI Chord&lt;/Name&gt;
+   &lt;URI&gt;http://gareus.org/oss/lv2/midifilter#midichord&lt;/URI&gt;
+  &lt;/Info&gt;
+
+  &lt;Data&gt;
+   &lt;Active&gt;Yes&lt;/Active&gt;
+   &lt;ControlChannel&gt;1&lt;/ControlChannel&gt;
+   &lt;Options&gt;0x1e1&lt;/Options&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;1&lt;/Index&gt;
+    &lt;Name&gt;Filter Channel&lt;/Name&gt;
+    &lt;Symbol&gt;channelf&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;2&lt;/Index&gt;
+    &lt;Name&gt;Scale&lt;/Name&gt;
+    &lt;Symbol&gt;scale&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;3&lt;/Index&gt;
+    &lt;Name&gt;prime&lt;/Name&gt;
+    &lt;Symbol&gt;c1&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;4&lt;/Index&gt;
+    &lt;Name&gt;3rd&lt;/Name&gt;
+    &lt;Symbol&gt;c3&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;5&lt;/Index&gt;
+    &lt;Name&gt;5th&lt;/Name&gt;
+    &lt;Symbol&gt;c5&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;6&lt;/Index&gt;
+    &lt;Name&gt;6th&lt;/Name&gt;
+    &lt;Symbol&gt;c6&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;7&lt;/Index&gt;
+    &lt;Name&gt;7th&lt;/Name&gt;
+    &lt;Symbol&gt;c7&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;8&lt;/Index&gt;
+    &lt;Name&gt;octave&lt;/Name&gt;
+    &lt;Symbol&gt;c8&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;9&lt;/Index&gt;
+    &lt;Name&gt;9th&lt;/Name&gt;
+    &lt;Symbol&gt;c9&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;10&lt;/Index&gt;
+    &lt;Name&gt;11th&lt;/Name&gt;
+    &lt;Symbol&gt;c11&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;11&lt;/Index&gt;
+    &lt;Name&gt;13th&lt;/Name&gt;
+    &lt;Symbol&gt;c13&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;12&lt;/Index&gt;
+    &lt;Name&gt;bass&lt;/Name&gt;
+    &lt;Symbol&gt;_8&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+  &lt;/Data&gt;
+ &lt;/Plugin&gt;
+
+ &lt;!-- QMidiArp Arp --&gt;
+ &lt;Plugin&gt;
+  &lt;Info&gt;
+   &lt;Type&gt;LV2&lt;/Type&gt;
+   &lt;Name&gt;QMidiArp Arp&lt;/Name&gt;
+   &lt;URI&gt;https://git.code.sf.net/p/qmidiarp/arp&lt;/URI&gt;
+  &lt;/Info&gt;
+
+  &lt;Data&gt;
+   &lt;Active&gt;Yes&lt;/Active&gt;
+   &lt;ControlChannel&gt;1&lt;/ControlChannel&gt;
+   &lt;Options&gt;0x1e1&lt;/Options&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;0&lt;/Index&gt;
+    &lt;Name&gt;Attack&lt;/Name&gt;
+    &lt;Symbol&gt;ATTACK&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;1&lt;/Index&gt;
+    &lt;Name&gt;Release&lt;/Name&gt;
+    &lt;Symbol&gt;RELEASE&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;2&lt;/Index&gt;
+    &lt;Name&gt;Random Tick&lt;/Name&gt;
+    &lt;Symbol&gt;RANDOM_TICK&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;3&lt;/Index&gt;
+    &lt;Name&gt;Random Length&lt;/Name&gt;
+    &lt;Symbol&gt;RANDOM_LEN&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;4&lt;/Index&gt;
+    &lt;Name&gt;Random Velocity&lt;/Name&gt;
+    &lt;Symbol&gt;RANDOM_VEL&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;5&lt;/Index&gt;
+    &lt;Name&gt;Output Channel&lt;/Name&gt;
+    &lt;Symbol&gt;CH_OUT&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;6&lt;/Index&gt;
+    &lt;Name&gt;Input Channel&lt;/Name&gt;
+    &lt;Symbol&gt;CH_IN&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;8&lt;/Index&gt;
+    &lt;Name&gt;Restart&lt;/Name&gt;
+    &lt;Symbol&gt;ENABLE_RESTARTBYKBD&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;9&lt;/Index&gt;
+    &lt;Name&gt;Trigger&lt;/Name&gt;
+    &lt;Symbol&gt;ENABLE_TRIGBYKBD&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;10&lt;/Index&gt;
+    &lt;Name&gt;Mute Output&lt;/Name&gt;
+    &lt;Symbol&gt;MUTE&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;11&lt;/Index&gt;
+    &lt;Name&gt;Latch mode&lt;/Name&gt;
+    &lt;Symbol&gt;LATCH_MODE&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;12&lt;/Index&gt;
+    &lt;Name&gt;Octave Mode&lt;/Name&gt;
+    &lt;Symbol&gt;OCTAVE_MODE&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;13&lt;/Index&gt;
+    &lt;Name&gt;Low octave limit&lt;/Name&gt;
+    &lt;Symbol&gt;OCTAVE_LOW&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;14&lt;/Index&gt;
+    &lt;Name&gt;High octave limit&lt;/Name&gt;
+    &lt;Symbol&gt;OCTAVE_HIGH&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;15&lt;/Index&gt;
+    &lt;Name&gt;Index In 1&lt;/Name&gt;
+    &lt;Symbol&gt;INDEX_IN1&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;16&lt;/Index&gt;
+    &lt;Name&gt;Index In 2&lt;/Name&gt;
+    &lt;Symbol&gt;INDEX_IN2&lt;/Symbol&gt;
+    &lt;Value&gt;127&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;17&lt;/Index&gt;
+    &lt;Name&gt;Range In 1&lt;/Name&gt;
+    &lt;Symbol&gt;RANGE_IN1&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;18&lt;/Index&gt;
+    &lt;Name&gt;Range In 2&lt;/Name&gt;
+    &lt;Symbol&gt;RANGE_IN2&lt;/Symbol&gt;
+    &lt;Value&gt;127&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;19&lt;/Index&gt;
+    &lt;Name&gt;Trigger Legato&lt;/Name&gt;
+    &lt;Symbol&gt;ENABLE_TRIGLEGATO&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;20&lt;/Index&gt;
+    &lt;Name&gt;Repeat Mode&lt;/Name&gt;
+    &lt;Symbol&gt;REPEAT_MODE&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;22&lt;/Index&gt;
+    &lt;Name&gt;Defer mute&lt;/Name&gt;
+    &lt;Symbol&gt;DEFER&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;23&lt;/Index&gt;
+    &lt;Name&gt;Pattern Preset&lt;/Name&gt;
+    &lt;Symbol&gt;PATTERN_PRESET&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;24&lt;/Index&gt;
+    &lt;Name&gt;Transport Mode&lt;/Name&gt;
+    &lt;Symbol&gt;TRANSPORT_MODE&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;25&lt;/Index&gt;
+    &lt;Name&gt;Internal Tempo&lt;/Name&gt;
+    &lt;Symbol&gt;TEMPO&lt;/Symbol&gt;
+    &lt;Value&gt;120&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;CustomData&gt;
+    &lt;Type&gt;http://lv2plug.in/ns/ext/atom#String&lt;/Type&gt;
+    &lt;Key&gt;https://git.code.sf.net/p/qmidiarp#ARPPATTERN&lt;/Key&gt;
+    &lt;Value&gt;&amp;gt;0&lt;/Value&gt;
+   &lt;/CustomData&gt;
+  &lt;/Data&gt;
+ &lt;/Plugin&gt;
+
+ &lt;!-- MIDI Transpose --&gt;
+ &lt;Plugin&gt;
+  &lt;Info&gt;
+   &lt;Type&gt;INTERNAL&lt;/Type&gt;
+   &lt;Name&gt;MIDI Transpose&lt;/Name&gt;
+   &lt;Label&gt;miditranspose&lt;/Label&gt;
+  &lt;/Info&gt;
+
+  &lt;Data&gt;
+   &lt;Active&gt;Yes&lt;/Active&gt;
+   &lt;ControlChannel&gt;1&lt;/ControlChannel&gt;
+   &lt;Options&gt;0x3e0&lt;/Options&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;0&lt;/Index&gt;
+    &lt;Name&gt;Octaves&lt;/Name&gt;
+    &lt;Value&gt;4&lt;/Value&gt;
+   &lt;/Parameter&gt;
+  &lt;/Data&gt;
+ &lt;/Plugin&gt;
+
+ &lt;!-- Simple Stereo Sampler --&gt;
+ &lt;Plugin&gt;
+  &lt;Info&gt;
+   &lt;Type&gt;DSSI&lt;/Type&gt;
+   &lt;Name&gt;Simple Stereo Sampler&lt;/Name&gt;
+   &lt;Binary&gt;/usr/lib/dssi/trivial_sampler.so&lt;/Binary&gt;
+   &lt;Label&gt;stereo_sampler&lt;/Label&gt;
+  &lt;/Info&gt;
+
+  &lt;Data&gt;
+   &lt;Active&gt;Yes&lt;/Active&gt;
+   &lt;ControlChannel&gt;1&lt;/ControlChannel&gt;
+   &lt;Options&gt;0x1e0&lt;/Options&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;0&lt;/Index&gt;
+    &lt;Name&gt;Tuned&lt;/Name&gt;
+    &lt;MidiCC&gt;12&lt;/MidiCC&gt;
+    &lt;MidiChannel&gt;1&lt;/MidiChannel&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;1&lt;/Index&gt;
+    &lt;Name&gt;Base pitch&lt;/Name&gt;
+    &lt;MidiCC&gt;13&lt;/MidiCC&gt;
+    &lt;MidiChannel&gt;1&lt;/MidiChannel&gt;
+    &lt;Value&gt;60&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;2&lt;/Index&gt;
+    &lt;Name&gt;Sustain&lt;/Name&gt;
+    &lt;MidiCC&gt;64&lt;/MidiCC&gt;
+    &lt;MidiChannel&gt;1&lt;/MidiChannel&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;3&lt;/Index&gt;
+    &lt;Name&gt;Release time&lt;/Name&gt;
+    &lt;MidiCC&gt;72&lt;/MidiCC&gt;
+    &lt;MidiChannel&gt;1&lt;/MidiChannel&gt;
+    &lt;Value&gt;0.00100000004749745&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;4&lt;/Index&gt;
+    &lt;Name&gt;Pan / Balance&lt;/Name&gt;
+    &lt;MidiCC&gt;10&lt;/MidiCC&gt;
+    &lt;MidiChannel&gt;1&lt;/MidiChannel&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;CustomData&gt;
+    &lt;Type&gt;http://kxstudio.sf.net/ns/carla/string&lt;/Type&gt;
+    &lt;Key&gt;load&lt;/Key&gt;
+    &lt;Value&gt;/home/falktx/Personal/Music/sonoj2017/sample.wav&lt;/Value&gt;
+   &lt;/CustomData&gt;
+  &lt;/Data&gt;
+ &lt;/Plugin&gt;
+
+ &lt;!-- Reverse Delay (5s max) --&gt;
+ &lt;Plugin&gt;
+  &lt;Info&gt;
+   &lt;Type&gt;LADSPA&lt;/Type&gt;
+   &lt;Name&gt;Reverse Delay (5s max)&lt;/Name&gt;
+   &lt;Binary&gt;/usr/lib/ladspa/revdelay_1605.so&lt;/Binary&gt;
+   &lt;Label&gt;revdelay&lt;/Label&gt;
+   &lt;UniqueID&gt;1605&lt;/UniqueID&gt;
+  &lt;/Info&gt;
+
+  &lt;Data&gt;
+   &lt;Active&gt;Yes&lt;/Active&gt;
+   &lt;ControlChannel&gt;1&lt;/ControlChannel&gt;
+   &lt;Options&gt;0x0&lt;/Options&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;0&lt;/Index&gt;
+    &lt;Name&gt;Delay Time&lt;/Name&gt;
+    &lt;Value&gt;2.29999995231628&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;1&lt;/Index&gt;
+    &lt;Name&gt;Dry Level&lt;/Name&gt;
+    &lt;Value&gt;-8.39999961853027&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;2&lt;/Index&gt;
+    &lt;Name&gt;Wet Level&lt;/Name&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;3&lt;/Index&gt;
+    &lt;Name&gt;Feedback&lt;/Name&gt;
+    &lt;Value&gt;0.200000002980232&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;4&lt;/Index&gt;
+    &lt;Name&gt;Crossfade samples&lt;/Name&gt;
+    &lt;Value&gt;2048&lt;/Value&gt;
+   &lt;/Parameter&gt;
+  &lt;/Data&gt;
+ &lt;/Plugin&gt;
+
+ &lt;!-- MIDI Transpose --&gt;
+ &lt;Plugin&gt;
+  &lt;Info&gt;
+   &lt;Type&gt;INTERNAL&lt;/Type&gt;
+   &lt;Name&gt;MIDI Transpose (2)&lt;/Name&gt;
+   &lt;Label&gt;miditranspose&lt;/Label&gt;
+  &lt;/Info&gt;
+
+  &lt;Data&gt;
+   &lt;Active&gt;Yes&lt;/Active&gt;
+   &lt;ControlChannel&gt;1&lt;/ControlChannel&gt;
+   &lt;Options&gt;0x3e0&lt;/Options&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;0&lt;/Index&gt;
+    &lt;Name&gt;Octaves&lt;/Name&gt;
+    &lt;Value&gt;-2&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;CustomData&gt;
+    &lt;Type&gt;http://kxstudio.sf.net/ns/carla/property&lt;/Type&gt;
+    &lt;Key&gt;CarlaSkinIsCompacted&lt;/Key&gt;
+    &lt;Value&gt;true&lt;/Value&gt;
+   &lt;/CustomData&gt;
+  &lt;/Data&gt;
+ &lt;/Plugin&gt;
+
+ &lt;!-- Kars --&gt;
+ &lt;Plugin&gt;
+  &lt;Info&gt;
+   &lt;Type&gt;INTERNAL&lt;/Type&gt;
+   &lt;Name&gt;Kars&lt;/Name&gt;
+   &lt;Label&gt;kars&lt;/Label&gt;
+  &lt;/Info&gt;
+
+  &lt;Data&gt;
+   &lt;Active&gt;Yes&lt;/Active&gt;
+   &lt;Volume&gt;0.650233&lt;/Volume&gt;
+   &lt;ControlChannel&gt;1&lt;/ControlChannel&gt;
+   &lt;Options&gt;0x0&lt;/Options&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;0&lt;/Index&gt;
+    &lt;Name&gt;Sustain&lt;/Name&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;CustomData&gt;
+    &lt;Type&gt;http://kxstudio.sf.net/ns/carla/property&lt;/Type&gt;
+    &lt;Key&gt;CarlaSkinIsCompacted&lt;/Key&gt;
+    &lt;Value&gt;false&lt;/Value&gt;
+   &lt;/CustomData&gt;
+  &lt;/Data&gt;
+ &lt;/Plugin&gt;
+
+ &lt;!-- Calf Vintage Delay --&gt;
+ &lt;Plugin&gt;
+  &lt;Info&gt;
+   &lt;Type&gt;LV2&lt;/Type&gt;
+   &lt;Name&gt;Calf Vintage Delay&lt;/Name&gt;
+   &lt;URI&gt;http://calf.sourceforge.net/plugins/VintageDelay&lt;/URI&gt;
+  &lt;/Info&gt;
+
+  &lt;Data&gt;
+   &lt;Active&gt;Yes&lt;/Active&gt;
+   &lt;ControlChannel&gt;1&lt;/ControlChannel&gt;
+   &lt;Options&gt;0x0&lt;/Options&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;0&lt;/Index&gt;
+    &lt;Name&gt;Tempo&lt;/Name&gt;
+    &lt;Symbol&gt;bpm&lt;/Symbol&gt;
+    &lt;Value&gt;120&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;2&lt;/Index&gt;
+    &lt;Name&gt;Subdivide&lt;/Name&gt;
+    &lt;Symbol&gt;subdiv&lt;/Symbol&gt;
+    &lt;Value&gt;4&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;3&lt;/Index&gt;
+    &lt;Name&gt;Time L&lt;/Name&gt;
+    &lt;Symbol&gt;time_l&lt;/Symbol&gt;
+    &lt;Value&gt;3&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;4&lt;/Index&gt;
+    &lt;Name&gt;Time R&lt;/Name&gt;
+    &lt;Symbol&gt;time_r&lt;/Symbol&gt;
+    &lt;Value&gt;5&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;5&lt;/Index&gt;
+    &lt;Name&gt;Feedback&lt;/Name&gt;
+    &lt;Symbol&gt;feedback&lt;/Symbol&gt;
+    &lt;Value&gt;0.5&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;6&lt;/Index&gt;
+    &lt;Name&gt;Amount&lt;/Name&gt;
+    &lt;Symbol&gt;amount&lt;/Symbol&gt;
+    &lt;Value&gt;0.25&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;7&lt;/Index&gt;
+    &lt;Name&gt;Mix mode&lt;/Name&gt;
+    &lt;Symbol&gt;mix_mode&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;8&lt;/Index&gt;
+    &lt;Name&gt;Medium&lt;/Name&gt;
+    &lt;Symbol&gt;medium&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;9&lt;/Index&gt;
+    &lt;Name&gt;Dry Amount&lt;/Name&gt;
+    &lt;Symbol&gt;dry&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;10&lt;/Index&gt;
+    &lt;Name&gt;Stereo Width&lt;/Name&gt;
+    &lt;Symbol&gt;width&lt;/Symbol&gt;
+    &lt;Value&gt;1&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;11&lt;/Index&gt;
+    &lt;Name&gt;Sync BPM&lt;/Name&gt;
+    &lt;Symbol&gt;sync&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;CustomData&gt;
+    &lt;Type&gt;http://kxstudio.sf.net/ns/carla/property&lt;/Type&gt;
+    &lt;Key&gt;CarlaSkinIsCompacted&lt;/Key&gt;
+    &lt;Value&gt;true&lt;/Value&gt;
+   &lt;/CustomData&gt;
+
+   &lt;CustomData&gt;
+    &lt;Type&gt;http://kxstudio.sf.net/ns/carla/string&lt;/Type&gt;
+    &lt;Key&gt;CarlaLoadLv2StateNow&lt;/Key&gt;
+    &lt;Value&gt;true&lt;/Value&gt;
+   &lt;/CustomData&gt;
+  &lt;/Data&gt;
+ &lt;/Plugin&gt;
+
+ &lt;!-- Harmless --&gt;
+ &lt;Plugin&gt;
+  &lt;Info&gt;
+   &lt;Type&gt;LV2&lt;/Type&gt;
+   &lt;Name&gt;Harmless&lt;/Name&gt;
+   &lt;URI&gt;https://github.com/ninodewit/SHIRO-Plugins/plugins/harmless&lt;/URI&gt;
+  &lt;/Info&gt;
+
+  &lt;Data&gt;
+   &lt;Active&gt;Yes&lt;/Active&gt;
+   &lt;ControlChannel&gt;1&lt;/ControlChannel&gt;
+   &lt;Options&gt;0x0&lt;/Options&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;0&lt;/Index&gt;
+    &lt;Name&gt;depth&lt;/Name&gt;
+    &lt;Symbol&gt;depth&lt;/Symbol&gt;
+    &lt;Value&gt;100&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;1&lt;/Index&gt;
+    &lt;Name&gt;phase&lt;/Name&gt;
+    &lt;Symbol&gt;phase&lt;/Symbol&gt;
+    &lt;Value&gt;0&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;2&lt;/Index&gt;
+    &lt;Name&gt;rate&lt;/Name&gt;
+    &lt;Symbol&gt;rate&lt;/Symbol&gt;
+    &lt;Value&gt;12&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;3&lt;/Index&gt;
+    &lt;Name&gt;shape&lt;/Name&gt;
+    &lt;Symbol&gt;shape&lt;/Symbol&gt;
+    &lt;Value&gt;0.5&lt;/Value&gt;
+   &lt;/Parameter&gt;
+
+   &lt;Parameter&gt;
+    &lt;Index&gt;4&lt;/Index&gt;
+    &lt;Name&gt;tone&lt;/Name&gt;
+    &lt;Symbol&gt;tone&lt;/Symbol&gt;
+    &lt;Value&gt;1000&lt;/Value&gt;
+   &lt;/Parameter&gt;
+  &lt;/Data&gt;
+ &lt;/Plugin&gt;
+&lt;/CARLA-PROJECT&gt;
+
+    </Value>
+   </CustomData>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>true</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <!-- Calf Sidechain Compressor -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>Calf Sidechain Compressor</Name>
+   <URI>http://calf.sourceforge.net/plugins/SidechainCompressor</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x0</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Bypass</Name>
+    <Symbol>bypass</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Input</Name>
+    <Symbol>level_in</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>Threshold</Name>
+    <Symbol>threshold</Symbol>
+    <Value>0.125</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Ratio</Name>
+    <Symbol>ratio</Symbol>
+    <Value>3.39259243011475</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>Attack</Name>
+    <Symbol>attack</Symbol>
+    <Value>20</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Release</Name>
+    <Symbol>release</Symbol>
+    <Value>250</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Makeup Gain</Name>
+    <Symbol>makeup</Symbol>
+    <Value>2.361985206604</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Knee</Name>
+    <Symbol>knee</Symbol>
+    <Value>2.82842993736267</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Detection</Name>
+    <Symbol>detection</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Stereo Link</Name>
+    <Symbol>stereo_link</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>15</Index>
+    <Name>S/C Mode</Name>
+    <Symbol>sc_mode</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>16</Index>
+    <Name>F1 Freq</Name>
+    <Symbol>f1_freq</Symbol>
+    <Value>250</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>17</Index>
+    <Name>F2 Freq</Name>
+    <Symbol>f2_freq</Symbol>
+    <Value>4500</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>18</Index>
+    <Name>F1 Level</Name>
+    <Symbol>f1_level</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>19</Index>
+    <Name>F2 Level</Name>
+    <Symbol>f2_level</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>20</Index>
+    <Name>S/C-Listen</Name>
+    <Symbol>sc_listen</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>23</Index>
+    <Name>S/C Route</Name>
+    <Symbol>sc_route</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>24</Index>
+    <Name>S/C Level</Name>
+    <Symbol>sc_level</Symbol>
+    <Value>5.6411919593811</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>25</Index>
+    <Name>Mix</Name>
+    <Symbol>mix</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>true</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <!-- Calf Multiband Compressor -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>Calf Multiband Compressor</Name>
+   <URI>http://calf.sourceforge.net/plugins/MultibandCompressor</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x0</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Bypass</Name>
+    <Symbol>bypass</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Input Gain</Name>
+    <Symbol>level_in</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Output Gain</Name>
+    <Symbol>level_out</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Split 1/2</Name>
+    <Symbol>freq0</Symbol>
+    <Value>120</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Split 2/3</Name>
+    <Symbol>freq1</Symbol>
+    <Value>1000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Split 3/4</Name>
+    <Symbol>freq2</Symbol>
+    <Value>6000</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>Filter Mode</Name>
+    <Symbol>mode</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>15</Index>
+    <Name>Threshold 1</Name>
+    <Symbol>threshold0</Symbol>
+    <Value>0.25</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>16</Index>
+    <Name>Ratio 1</Name>
+    <Symbol>ratio0</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>17</Index>
+    <Name>Attack 1</Name>
+    <Symbol>attack0</Symbol>
+    <Value>150</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>18</Index>
+    <Name>Release 1</Name>
+    <Symbol>release0</Symbol>
+    <Value>300</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>19</Index>
+    <Name>Makeup 1</Name>
+    <Symbol>makeup0</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>20</Index>
+    <Name>Knee 1</Name>
+    <Symbol>knee0</Symbol>
+    <Value>2.82842993736267</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>21</Index>
+    <Name>Detection 1</Name>
+    <Symbol>detection0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>24</Index>
+    <Name>Bypass 1</Name>
+    <Symbol>bypass0</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>25</Index>
+    <Name>Solo 1</Name>
+    <Symbol>solo0</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>26</Index>
+    <Name>Threshold 2</Name>
+    <Symbol>threshold1</Symbol>
+    <Value>0.25</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>27</Index>
+    <Name>Ratio 2</Name>
+    <Symbol>ratio1</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>28</Index>
+    <Name>Attack 2</Name>
+    <Symbol>attack1</Symbol>
+    <Value>150</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>29</Index>
+    <Name>Release 2</Name>
+    <Symbol>release1</Symbol>
+    <Value>300</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>30</Index>
+    <Name>Makeup 2</Name>
+    <Symbol>makeup1</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>31</Index>
+    <Name>Knee 2</Name>
+    <Symbol>knee1</Symbol>
+    <Value>2.82842993736267</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>32</Index>
+    <Name>Detection 2</Name>
+    <Symbol>detection1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>35</Index>
+    <Name>Bypass 2</Name>
+    <Symbol>bypass1</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>36</Index>
+    <Name>Solo 2</Name>
+    <Symbol>solo1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>37</Index>
+    <Name>Threshold 3</Name>
+    <Symbol>threshold2</Symbol>
+    <Value>0.25</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>38</Index>
+    <Name>Ratio 3</Name>
+    <Symbol>ratio2</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>39</Index>
+    <Name>Attack 3</Name>
+    <Symbol>attack2</Symbol>
+    <Value>150</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>40</Index>
+    <Name>Release 3</Name>
+    <Symbol>release2</Symbol>
+    <Value>300</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>41</Index>
+    <Name>Makeup 3</Name>
+    <Symbol>makeup2</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>42</Index>
+    <Name>Knee 3</Name>
+    <Symbol>knee2</Symbol>
+    <Value>2.82842993736267</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>43</Index>
+    <Name>Detection 3</Name>
+    <Symbol>detection2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>46</Index>
+    <Name>Bypass 3</Name>
+    <Symbol>bypass2</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>47</Index>
+    <Name>Solo 3</Name>
+    <Symbol>solo2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>48</Index>
+    <Name>Threshold 4</Name>
+    <Symbol>threshold3</Symbol>
+    <Value>0.25</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>49</Index>
+    <Name>Ratio 4</Name>
+    <Symbol>ratio3</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>50</Index>
+    <Name>Attack 4</Name>
+    <Symbol>attack3</Symbol>
+    <Value>150</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>51</Index>
+    <Name>Release 4</Name>
+    <Symbol>release3</Symbol>
+    <Value>300</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>52</Index>
+    <Name>Makeup 4</Name>
+    <Symbol>makeup3</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>53</Index>
+    <Name>Knee 4</Name>
+    <Symbol>knee3</Symbol>
+    <Value>2.82842993736267</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>54</Index>
+    <Name>Detection 4</Name>
+    <Symbol>detection3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>57</Index>
+    <Name>Bypass 4</Name>
+    <Symbol>bypass3</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>58</Index>
+    <Name>Solo 4</Name>
+    <Symbol>solo3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>59</Index>
+    <Name>Notebook</Name>
+    <Symbol>notebook</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>true</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <!-- MIDI Step Sequencer8x8 -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>drums</Name>
+   <URI>http://gareus.org/oss/lv2/stepseq#s8n8</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x1</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Sync</Name>
+    <Symbol>sync</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>BPM</Name>
+    <Symbol>bpm</Symbol>
+    <Value>120</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Step Duration (4/4)</Name>
+    <Symbol>div</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Swing</Name>
+    <Symbol>swing</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Drum Mode</Name>
+    <Symbol>drummode</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>Midi Channel</Name>
+    <Symbol>chn</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>MIDI Panic</Name>
+    <Symbol>panic</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Note 1</Name>
+    <Symbol>note1</Symbol>
+    <Value>38</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Note 2</Name>
+    <Symbol>note2</Symbol>
+    <Value>61</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Note 3</Name>
+    <Symbol>note3</Symbol>
+    <Value>61</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Note 4</Name>
+    <Symbol>note4</Symbol>
+    <Value>63</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Note 5</Name>
+    <Symbol>note5</Symbol>
+    <Value>62</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>Note 6</Name>
+    <Symbol>note6</Symbol>
+    <Value>41</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>15</Index>
+    <Name>Note 7</Name>
+    <Symbol>note7</Symbol>
+    <Value>59</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>16</Index>
+    <Name>Note 8</Name>
+    <Symbol>note8</Symbol>
+    <Value>57</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>17</Index>
+    <Name>Grid S: 1 N: 1</Name>
+    <Symbol>grid_1_1</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>18</Index>
+    <Name>Grid S: 2 N: 1</Name>
+    <Symbol>grid_2_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>19</Index>
+    <Name>Grid S: 3 N: 1</Name>
+    <Symbol>grid_3_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>20</Index>
+    <Name>Grid S: 4 N: 1</Name>
+    <Symbol>grid_4_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>21</Index>
+    <Name>Grid S: 5 N: 1</Name>
+    <Symbol>grid_5_1</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>22</Index>
+    <Name>Grid S: 6 N: 1</Name>
+    <Symbol>grid_6_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>23</Index>
+    <Name>Grid S: 7 N: 1</Name>
+    <Symbol>grid_7_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>24</Index>
+    <Name>Grid S: 8 N: 1</Name>
+    <Symbol>grid_8_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>25</Index>
+    <Name>Grid S: 1 N: 2</Name>
+    <Symbol>grid_1_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>26</Index>
+    <Name>Grid S: 2 N: 2</Name>
+    <Symbol>grid_2_2</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>27</Index>
+    <Name>Grid S: 3 N: 2</Name>
+    <Symbol>grid_3_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>28</Index>
+    <Name>Grid S: 4 N: 2</Name>
+    <Symbol>grid_4_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>29</Index>
+    <Name>Grid S: 5 N: 2</Name>
+    <Symbol>grid_5_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>30</Index>
+    <Name>Grid S: 6 N: 2</Name>
+    <Symbol>grid_6_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>31</Index>
+    <Name>Grid S: 7 N: 2</Name>
+    <Symbol>grid_7_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>32</Index>
+    <Name>Grid S: 8 N: 2</Name>
+    <Symbol>grid_8_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>33</Index>
+    <Name>Grid S: 1 N: 3</Name>
+    <Symbol>grid_1_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>34</Index>
+    <Name>Grid S: 2 N: 3</Name>
+    <Symbol>grid_2_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>35</Index>
+    <Name>Grid S: 3 N: 3</Name>
+    <Symbol>grid_3_3</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>36</Index>
+    <Name>Grid S: 4 N: 3</Name>
+    <Symbol>grid_4_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>37</Index>
+    <Name>Grid S: 5 N: 3</Name>
+    <Symbol>grid_5_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>38</Index>
+    <Name>Grid S: 6 N: 3</Name>
+    <Symbol>grid_6_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>39</Index>
+    <Name>Grid S: 7 N: 3</Name>
+    <Symbol>grid_7_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>40</Index>
+    <Name>Grid S: 8 N: 3</Name>
+    <Symbol>grid_8_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>41</Index>
+    <Name>Grid S: 1 N: 4</Name>
+    <Symbol>grid_1_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>42</Index>
+    <Name>Grid S: 2 N: 4</Name>
+    <Symbol>grid_2_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>43</Index>
+    <Name>Grid S: 3 N: 4</Name>
+    <Symbol>grid_3_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>44</Index>
+    <Name>Grid S: 4 N: 4</Name>
+    <Symbol>grid_4_4</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>45</Index>
+    <Name>Grid S: 5 N: 4</Name>
+    <Symbol>grid_5_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>46</Index>
+    <Name>Grid S: 6 N: 4</Name>
+    <Symbol>grid_6_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>47</Index>
+    <Name>Grid S: 7 N: 4</Name>
+    <Symbol>grid_7_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>48</Index>
+    <Name>Grid S: 8 N: 4</Name>
+    <Symbol>grid_8_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>49</Index>
+    <Name>Grid S: 1 N: 5</Name>
+    <Symbol>grid_1_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>50</Index>
+    <Name>Grid S: 2 N: 5</Name>
+    <Symbol>grid_2_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>51</Index>
+    <Name>Grid S: 3 N: 5</Name>
+    <Symbol>grid_3_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>52</Index>
+    <Name>Grid S: 4 N: 5</Name>
+    <Symbol>grid_4_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>53</Index>
+    <Name>Grid S: 5 N: 5</Name>
+    <Symbol>grid_5_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>54</Index>
+    <Name>Grid S: 6 N: 5</Name>
+    <Symbol>grid_6_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>55</Index>
+    <Name>Grid S: 7 N: 5</Name>
+    <Symbol>grid_7_5</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>56</Index>
+    <Name>Grid S: 8 N: 5</Name>
+    <Symbol>grid_8_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>57</Index>
+    <Name>Grid S: 1 N: 6</Name>
+    <Symbol>grid_1_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>58</Index>
+    <Name>Grid S: 2 N: 6</Name>
+    <Symbol>grid_2_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>59</Index>
+    <Name>Grid S: 3 N: 6</Name>
+    <Symbol>grid_3_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>60</Index>
+    <Name>Grid S: 4 N: 6</Name>
+    <Symbol>grid_4_6</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>61</Index>
+    <Name>Grid S: 5 N: 6</Name>
+    <Symbol>grid_5_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>62</Index>
+    <Name>Grid S: 6 N: 6</Name>
+    <Symbol>grid_6_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>63</Index>
+    <Name>Grid S: 7 N: 6</Name>
+    <Symbol>grid_7_6</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>64</Index>
+    <Name>Grid S: 8 N: 6</Name>
+    <Symbol>grid_8_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>65</Index>
+    <Name>Grid S: 1 N: 7</Name>
+    <Symbol>grid_1_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>66</Index>
+    <Name>Grid S: 2 N: 7</Name>
+    <Symbol>grid_2_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>67</Index>
+    <Name>Grid S: 3 N: 7</Name>
+    <Symbol>grid_3_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>68</Index>
+    <Name>Grid S: 4 N: 7</Name>
+    <Symbol>grid_4_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>69</Index>
+    <Name>Grid S: 5 N: 7</Name>
+    <Symbol>grid_5_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>70</Index>
+    <Name>Grid S: 6 N: 7</Name>
+    <Symbol>grid_6_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>71</Index>
+    <Name>Grid S: 7 N: 7</Name>
+    <Symbol>grid_7_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>72</Index>
+    <Name>Grid S: 8 N: 7</Name>
+    <Symbol>grid_8_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>73</Index>
+    <Name>Grid S: 1 N: 8</Name>
+    <Symbol>grid_1_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>74</Index>
+    <Name>Grid S: 2 N: 8</Name>
+    <Symbol>grid_2_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>75</Index>
+    <Name>Grid S: 3 N: 8</Name>
+    <Symbol>grid_3_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>76</Index>
+    <Name>Grid S: 4 N: 8</Name>
+    <Symbol>grid_4_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>77</Index>
+    <Name>Grid S: 5 N: 8</Name>
+    <Symbol>grid_5_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>78</Index>
+    <Name>Grid S: 6 N: 8</Name>
+    <Symbol>grid_6_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>79</Index>
+    <Name>Grid S: 7 N: 8</Name>
+    <Symbol>grid_7_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>80</Index>
+    <Name>Grid S: 8 N: 8</Name>
+    <Symbol>grid_8_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+  </Data>
+ </Plugin>
+
+ <!-- Simple Stereo Sampler -->
+ <Plugin>
+  <Info>
+   <Type>DSSI</Type>
+   <Name>Simple Stereo Sampler</Name>
+   <Binary>/usr/lib/dssi/trivial_sampler.so</Binary>
+   <Label>stereo_sampler</Label>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <Volume>1.27</Volume>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x1e0</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Tuned</Name>
+    <MidiCC>12</MidiCC>
+    <MidiChannel>1</MidiChannel>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Base pitch</Name>
+    <MidiCC>13</MidiCC>
+    <MidiChannel>1</MidiChannel>
+    <Value>60</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Sustain</Name>
+    <MidiCC>64</MidiCC>
+    <MidiChannel>1</MidiChannel>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Release time</Name>
+    <MidiCC>72</MidiCC>
+    <MidiChannel>1</MidiChannel>
+    <Value>0.00100000004749745</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Pan / Balance</Name>
+    <MidiCC>10</MidiCC>
+    <MidiChannel>1</MidiChannel>
+    <Value>0</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/string</Type>
+    <Key>load</Key>
+    <Value>/home/falktx/Personal/Music/sonoj2017/sample.wav</Value>
+   </CustomData>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>true</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <!-- MIDI Step Sequencer8x8 -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>just-kick</Name>
+   <URI>http://gareus.org/oss/lv2/stepseq#s8n8</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x1</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Sync</Name>
+    <Symbol>sync</Symbol>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>BPM</Name>
+    <Symbol>bpm</Symbol>
+    <Value>120</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Step Duration (4/4)</Name>
+    <Symbol>div</Symbol>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Swing</Name>
+    <Symbol>swing</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Drum Mode</Name>
+    <Symbol>drummode</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>Midi Channel</Name>
+    <Symbol>chn</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>MIDI Panic</Name>
+    <Symbol>panic</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Note 1</Name>
+    <Symbol>note1</Symbol>
+    <Value>69</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Note 2</Name>
+    <Symbol>note2</Symbol>
+    <Value>67</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Note 3</Name>
+    <Symbol>note3</Symbol>
+    <Value>65</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Note 4</Name>
+    <Symbol>note4</Symbol>
+    <Value>64</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>13</Index>
+    <Name>Note 5</Name>
+    <Symbol>note5</Symbol>
+    <Value>62</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>14</Index>
+    <Name>Note 6</Name>
+    <Symbol>note6</Symbol>
+    <Value>60</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>15</Index>
+    <Name>Note 7</Name>
+    <Symbol>note7</Symbol>
+    <Value>59</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>16</Index>
+    <Name>Note 8</Name>
+    <Symbol>note8</Symbol>
+    <Value>57</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>17</Index>
+    <Name>Grid S: 1 N: 1</Name>
+    <Symbol>grid_1_1</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>18</Index>
+    <Name>Grid S: 2 N: 1</Name>
+    <Symbol>grid_2_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>19</Index>
+    <Name>Grid S: 3 N: 1</Name>
+    <Symbol>grid_3_1</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>20</Index>
+    <Name>Grid S: 4 N: 1</Name>
+    <Symbol>grid_4_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>21</Index>
+    <Name>Grid S: 5 N: 1</Name>
+    <Symbol>grid_5_1</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>22</Index>
+    <Name>Grid S: 6 N: 1</Name>
+    <Symbol>grid_6_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>23</Index>
+    <Name>Grid S: 7 N: 1</Name>
+    <Symbol>grid_7_1</Symbol>
+    <Value>127</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>24</Index>
+    <Name>Grid S: 8 N: 1</Name>
+    <Symbol>grid_8_1</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>25</Index>
+    <Name>Grid S: 1 N: 2</Name>
+    <Symbol>grid_1_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>26</Index>
+    <Name>Grid S: 2 N: 2</Name>
+    <Symbol>grid_2_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>27</Index>
+    <Name>Grid S: 3 N: 2</Name>
+    <Symbol>grid_3_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>28</Index>
+    <Name>Grid S: 4 N: 2</Name>
+    <Symbol>grid_4_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>29</Index>
+    <Name>Grid S: 5 N: 2</Name>
+    <Symbol>grid_5_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>30</Index>
+    <Name>Grid S: 6 N: 2</Name>
+    <Symbol>grid_6_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>31</Index>
+    <Name>Grid S: 7 N: 2</Name>
+    <Symbol>grid_7_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>32</Index>
+    <Name>Grid S: 8 N: 2</Name>
+    <Symbol>grid_8_2</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>33</Index>
+    <Name>Grid S: 1 N: 3</Name>
+    <Symbol>grid_1_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>34</Index>
+    <Name>Grid S: 2 N: 3</Name>
+    <Symbol>grid_2_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>35</Index>
+    <Name>Grid S: 3 N: 3</Name>
+    <Symbol>grid_3_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>36</Index>
+    <Name>Grid S: 4 N: 3</Name>
+    <Symbol>grid_4_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>37</Index>
+    <Name>Grid S: 5 N: 3</Name>
+    <Symbol>grid_5_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>38</Index>
+    <Name>Grid S: 6 N: 3</Name>
+    <Symbol>grid_6_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>39</Index>
+    <Name>Grid S: 7 N: 3</Name>
+    <Symbol>grid_7_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>40</Index>
+    <Name>Grid S: 8 N: 3</Name>
+    <Symbol>grid_8_3</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>41</Index>
+    <Name>Grid S: 1 N: 4</Name>
+    <Symbol>grid_1_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>42</Index>
+    <Name>Grid S: 2 N: 4</Name>
+    <Symbol>grid_2_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>43</Index>
+    <Name>Grid S: 3 N: 4</Name>
+    <Symbol>grid_3_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>44</Index>
+    <Name>Grid S: 4 N: 4</Name>
+    <Symbol>grid_4_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>45</Index>
+    <Name>Grid S: 5 N: 4</Name>
+    <Symbol>grid_5_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>46</Index>
+    <Name>Grid S: 6 N: 4</Name>
+    <Symbol>grid_6_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>47</Index>
+    <Name>Grid S: 7 N: 4</Name>
+    <Symbol>grid_7_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>48</Index>
+    <Name>Grid S: 8 N: 4</Name>
+    <Symbol>grid_8_4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>49</Index>
+    <Name>Grid S: 1 N: 5</Name>
+    <Symbol>grid_1_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>50</Index>
+    <Name>Grid S: 2 N: 5</Name>
+    <Symbol>grid_2_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>51</Index>
+    <Name>Grid S: 3 N: 5</Name>
+    <Symbol>grid_3_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>52</Index>
+    <Name>Grid S: 4 N: 5</Name>
+    <Symbol>grid_4_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>53</Index>
+    <Name>Grid S: 5 N: 5</Name>
+    <Symbol>grid_5_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>54</Index>
+    <Name>Grid S: 6 N: 5</Name>
+    <Symbol>grid_6_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>55</Index>
+    <Name>Grid S: 7 N: 5</Name>
+    <Symbol>grid_7_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>56</Index>
+    <Name>Grid S: 8 N: 5</Name>
+    <Symbol>grid_8_5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>57</Index>
+    <Name>Grid S: 1 N: 6</Name>
+    <Symbol>grid_1_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>58</Index>
+    <Name>Grid S: 2 N: 6</Name>
+    <Symbol>grid_2_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>59</Index>
+    <Name>Grid S: 3 N: 6</Name>
+    <Symbol>grid_3_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>60</Index>
+    <Name>Grid S: 4 N: 6</Name>
+    <Symbol>grid_4_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>61</Index>
+    <Name>Grid S: 5 N: 6</Name>
+    <Symbol>grid_5_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>62</Index>
+    <Name>Grid S: 6 N: 6</Name>
+    <Symbol>grid_6_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>63</Index>
+    <Name>Grid S: 7 N: 6</Name>
+    <Symbol>grid_7_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>64</Index>
+    <Name>Grid S: 8 N: 6</Name>
+    <Symbol>grid_8_6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>65</Index>
+    <Name>Grid S: 1 N: 7</Name>
+    <Symbol>grid_1_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>66</Index>
+    <Name>Grid S: 2 N: 7</Name>
+    <Symbol>grid_2_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>67</Index>
+    <Name>Grid S: 3 N: 7</Name>
+    <Symbol>grid_3_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>68</Index>
+    <Name>Grid S: 4 N: 7</Name>
+    <Symbol>grid_4_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>69</Index>
+    <Name>Grid S: 5 N: 7</Name>
+    <Symbol>grid_5_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>70</Index>
+    <Name>Grid S: 6 N: 7</Name>
+    <Symbol>grid_6_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>71</Index>
+    <Name>Grid S: 7 N: 7</Name>
+    <Symbol>grid_7_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>72</Index>
+    <Name>Grid S: 8 N: 7</Name>
+    <Symbol>grid_8_7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>73</Index>
+    <Name>Grid S: 1 N: 8</Name>
+    <Symbol>grid_1_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>74</Index>
+    <Name>Grid S: 2 N: 8</Name>
+    <Symbol>grid_2_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>75</Index>
+    <Name>Grid S: 3 N: 8</Name>
+    <Symbol>grid_3_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>76</Index>
+    <Name>Grid S: 4 N: 8</Name>
+    <Symbol>grid_4_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>77</Index>
+    <Name>Grid S: 5 N: 8</Name>
+    <Symbol>grid_5_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>78</Index>
+    <Name>Grid S: 6 N: 8</Name>
+    <Symbol>grid_6_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>79</Index>
+    <Name>Grid S: 7 N: 8</Name>
+    <Symbol>grid_7_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>80</Index>
+    <Name>Grid S: 8 N: 8</Name>
+    <Symbol>grid_8_8</Symbol>
+    <Value>0</Value>
+   </Parameter>
+  </Data>
+ </Plugin>
+
+ <!-- FluidR3_GM -->
+ <Plugin>
+  <Info>
+   <Type>SF2</Type>
+   <Name>FluidR3_GM</Name>
+   <Filename>/usr/share/sounds/sf2/FluidR3_GM.sf2</Filename>
+   <Label>FluidR3_GM</Label>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x1a4</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Reverb On/Off</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Reverb Room Size</Name>
+    <Value>0.200000002980232</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>Reverb Damp</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Reverb Level</Name>
+    <MidiCC>91</MidiCC>
+    <MidiChannel>1</MidiChannel>
+    <Value>0.899999976158142</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Reverb Width</Name>
+    <Value>0.5</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>Chorus On/Off</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>Chorus Voice Count</Name>
+    <Value>3</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>Chorus Level</Name>
+    <Value>2</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>Chorus Speed</Name>
+    <Value>0.300000011920929</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>Chorus Depth</Name>
+    <Value>8</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>Chorus Type</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>11</Index>
+    <Name>Polyphony</Name>
+    <Value>64</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>12</Index>
+    <Name>Interpolation</Name>
+    <Value>4</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/string</Type>
+    <Key>midiPrograms</Key>
+    <Value>178:0:0:0:0:0:0:0:0:158:0:0:0:0:0:0</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <ExternalPatchbay>
+  <Connection>
+   <Source>system:capture_1</Source>
+   <Target>PulseAudio JACK Source:front-left</Target>
+  </Connection>
+  <Connection>
+   <Source>system:capture_2</Source>
+   <Target>PulseAudio JACK Source:front-right</Target>
+  </Connection>
+  <Connection>
+   <Source>PulseAudio JACK Sink:front-left</Source>
+   <Target>system:playback_1</Target>
+  </Connection>
+  <Connection>
+   <Source>PulseAudio JACK Sink:front-right</Source>
+   <Target>system:playback_2</Target>
+  </Connection>
+  <Connection>
+   <Source>ringtone-pad:output_1</Source>
+   <Target>Calf Sidechain Compressor:In L</Target>
+  </Connection>
+  <Connection>
+   <Source>ringtone-pad:output_2</Source>
+   <Target>Calf Sidechain Compressor:In R</Target>
+  </Connection>
+  <Connection>
+   <Source>ringtone-sawbass:output_1</Source>
+   <Target>Calf Multiband Compressor:In L</Target>
+  </Connection>
+  <Connection>
+   <Source>ringtone-sawbass:output_2</Source>
+   <Target>Calf Multiband Compressor:In R</Target>
+  </Connection>
+  <Connection>
+   <Source>main chord:events-out</Source>
+   <Target>ringtone-pad:events-in</Target>
+  </Connection>
+  <Connection>
+   <Source>main chord:events-out</Source>
+   <Target>ringtone-sawbass:events-in</Target>
+  </Connection>
+  <Connection>
+   <Source>main chord:events-out</Source>
+   <Target>high arp:events-in</Target>
+  </Connection>
+  <Connection>
+   <Source>high arp:output_1</Source>
+   <Target>system:playback_1</Target>
+  </Connection>
+  <Connection>
+   <Source>high arp:output_2</Source>
+   <Target>system:playback_2</Target>
+  </Connection>
+  <Connection>
+   <Source>Calf Sidechain Compressor:Out L</Source>
+   <Target>Calf Multiband Compressor:In L</Target>
+  </Connection>
+  <Connection>
+   <Source>Calf Sidechain Compressor:Out R</Source>
+   <Target>Calf Multiband Compressor:In R</Target>
+  </Connection>
+  <Connection>
+   <Source>Calf Multiband Compressor:Out L</Source>
+   <Target>system:playback_1</Target>
+  </Connection>
+  <Connection>
+   <Source>Calf Multiband Compressor:Out R</Source>
+   <Target>system:playback_2</Target>
+  </Connection>
+  <Connection>
+   <Source>drums:events-out</Source>
+   <Target>FluidR3_GM:events-in</Target>
+  </Connection>
+  <Connection>
+   <Source>Simple Stereo Sampler:Output L</Source>
+   <Target>Calf Sidechain Compressor:Sidechain</Target>
+  </Connection>
+  <Connection>
+   <Source>Simple Stereo Sampler:Output R</Source>
+   <Target>Calf Sidechain Compressor:Sidechain 2</Target>
+  </Connection>
+  <Connection>
+   <Source>just-kick:events-out</Source>
+   <Target>Simple Stereo Sampler:events-in</Target>
+  </Connection>
+  <Connection>
+   <Source>FluidR3_GM:out-left</Source>
+   <Target>system:playback_1</Target>
+  </Connection>
+  <Connection>
+   <Source>FluidR3_GM:out-right</Source>
+   <Target>system:playback_2</Target>
+  </Connection>
+ </ExternalPatchbay>
+</CARLA-PROJECT>
